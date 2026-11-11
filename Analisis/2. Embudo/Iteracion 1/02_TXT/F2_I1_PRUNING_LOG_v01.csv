@@ -1,0 +1,276 @@
+﻿VAR_NAME,STEP,REASON,KEEPER
+FLAG_CYR_ISO_HAS_P1,S1,Constante absoluta,
+CYR_ISO_1D_LEN_ALN_GLB,S1,Constante absoluta,
+CYR_ISO_1D_PCT_A_P1,S1,Constante absoluta,
+CYR_ISO_1D_PCT_G_B,S1,Constante absoluta,
+CYR_ISO_1D_PCT_G_P2,S1,Constante absoluta,
+CYR_ISO_2D_LEN_ALN_GLB,S1,Constante absoluta,
+CYR_ISO_2D_DG_FOLD_GLB,S1,Constante absoluta,
+CYR_ISO_3D_BP_NC_GLB,S1,Constante absoluta,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_T1,S1,Constante absoluta,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_T1,S1,Constante absoluta,
+CYR_ISO_3D_BP_NC_T1,S1,Constante absoluta,
+CYR_ISO_3D_STACK_T1,S1,Constante absoluta,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_P1,S1,Constante absoluta,
+CYR_ISO_3D_BP_NC_P1,S1,Constante absoluta,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_B,S1,Constante absoluta,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_B,S1,Constante absoluta,
+CYR_ISO_3D_BP_NC_B,S1,Constante absoluta,
+CYR_ISO_3D_BP_NC_P2,S1,Constante absoluta,
+MIR_ISO_1D_LEN_REAL_GLB,S1,Constante absoluta,
+MIR_ISO_1D_LEN_ALN_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_A_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_U_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_G_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_C_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PUR_GLB,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PIR_GLB,S1,Constante absoluta,
+MIR_ISO_1D_LEN_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_A_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_U_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_G_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_C_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PUR_P1,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PIR_P1,S1,Constante absoluta,
+MIR_ISO_1D_LEN_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_A_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_U_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_G_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_C_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PUR_B,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PIR_B,S1,Constante absoluta,
+MIR_ISO_1D_LEN_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_A_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_U_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_G_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_C_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PUR_P2,S1,Constante absoluta,
+MIR_ISO_1D_PCT_PIR_P2,S1,Constante absoluta,
+MIR_ISO_2D_LEN_REAL_GLB,S1,Constante absoluta,
+MIR_ISO_2D_DG_FOLD_GLB,S1,Constante absoluta,
+MIR_ISO_2D_DG_ENSEMBLE_GLB,S1,Constante absoluta,
+MIR_ISO_2D_FREQ_MFE_GLB,S1,Constante absoluta,
+MIR_ISO_2D_ENS_DIV_GLB,S1,Constante absoluta,
+MIR_ISO_2D_PROB_PAIR_GLB,S1,Constante absoluta,
+MIR_ISO_2D_ACCES_POS_GLB,S1,Constante absoluta,
+MIR_ISO_2D_ENT_SITE_GLB,S1,Constante absoluta,
+MIR_ISO_2D_PROB_PAIR_T1,S1,Constante absoluta,
+MIR_ISO_2D_ACCES_POS_T1,S1,Constante absoluta,
+MIR_ISO_2D_ENT_POS_T1,S1,Constante absoluta,
+MIR_ISO_2D_PROB_PAIR_P1,S1,Constante absoluta,
+MIR_ISO_2D_ACCES_POS_P1,S1,Constante absoluta,
+MIR_ISO_2D_ENT_POS_P1,S1,Constante absoluta,
+MIR_ISO_2D_PROB_PAIR_B,S1,Constante absoluta,
+MIR_ISO_2D_ACCES_POS_B,S1,Constante absoluta,
+MIR_ISO_2D_ENT_POS_B,S1,Constante absoluta,
+MIR_ISO_2D_PROB_PAIR_P2,S1,Constante absoluta,
+MIR_ISO_2D_ACCES_POS_P2,S1,Constante absoluta,
+MIR_ISO_2D_ENT_POS_P2,S1,Constante absoluta,
+MIR_ISO_3D_RG_GLB,S1,Constante absoluta,
+MIR_ISO_3D_END_DIST_GLB,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_MEAN_GLB,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_SD_GLB,S1,Constante absoluta,
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_GLB,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_GLB,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_GLB,S1,Constante absoluta,
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_GLB,S1,Constante absoluta,
+MIR_ISO_3D_SASA_TOTAL_GLB,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BB_PCT_GLB,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BASES_PCT_GLB,S1,Constante absoluta,
+MIR_ISO_3D_BP_NC_GLB,S1,Constante absoluta,
+MIR_ISO_3D_STACK_GLB,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_T1,S1,Constante absoluta,
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_T1,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_T1,S1,Constante absoluta,
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_T1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_TOTAL_T1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BB_PCT_T1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BASE_T1,S1,Constante absoluta,
+MIR_ISO_3D_BP_NC_T1,S1,Constante absoluta,
+MIR_ISO_3D_STACK_T1,S1,Constante absoluta,
+MIR_ISO_3D_RG_P1,S1,Constante absoluta,
+MIR_ISO_3D_END_DIST_P1,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_MEAN_P1,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_SD_P1,S1,Constante absoluta,
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_P1,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P1,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_P1,S1,Constante absoluta,
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_TOTAL_P1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BB_PCT_P1,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BASES_PCT_P1,S1,Constante absoluta,
+MIR_ISO_3D_BP_NC_P1,S1,Constante absoluta,
+MIR_ISO_3D_STACK_P1,S1,Constante absoluta,
+MIR_ISO_3D_RG_B,S1,Constante absoluta,
+MIR_ISO_3D_END_DIST_B,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_MEAN_B,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_SD_B,S1,Constante absoluta,
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_B,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_B,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_B,S1,Constante absoluta,
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_B,S1,Constante absoluta,
+MIR_ISO_3D_SASA_TOTAL_B,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BB_PCT_B,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BASES_PCT_B,S1,Constante absoluta,
+MIR_ISO_3D_BP_NC_B,S1,Constante absoluta,
+MIR_ISO_3D_STACK_B,S1,Constante absoluta,
+MIR_ISO_3D_RG_P2,S1,Constante absoluta,
+MIR_ISO_3D_END_DIST_P2,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_MEAN_P2,S1,Constante absoluta,
+MIR_ISO_3D_CHI_ANGLE_SD_P2,S1,Constante absoluta,
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_P2,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P2,S1,Constante absoluta,
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_P2,S1,Constante absoluta,
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P2,S1,Constante absoluta,
+MIR_ISO_3D_SASA_TOTAL_P2,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BB_PCT_P2,S1,Constante absoluta,
+MIR_ISO_3D_SASA_BASES_PCT_P2,S1,Constante absoluta,
+MIR_ISO_3D_BP_NC_P2,S1,Constante absoluta,
+MIR_ISO_3D_STACK_P2,S1,Constante absoluta,
+CYR_DPX_1D_LEN_ALN_GLB,S1,Constante absoluta,
+CYR_DPX_1D_LEN_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_A_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_U_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_G_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_C_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_PUR_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_PIR_T1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_A_P1,S1,Constante absoluta,
+CYR_DPX_1D_PCT_G_P2,S1,Constante absoluta,
+MIR_DPX_1D_LEN_REAL_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_A_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_U_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_G_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_C_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PUR_GLB,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PIR_GLB,S1,Constante absoluta,
+MIR_DPX_1D_LEN_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_A_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_U_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_G_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_C_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PUR_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PIR_T1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_U_P1,S1,Constante absoluta,
+MIR_DPX_1D_PCT_C_P2,S1,Constante absoluta,
+MIR_DPX_1D_PCT_A_O,S1,Constante absoluta,
+MIR_DPX_1D_PCT_U_O,S1,Constante absoluta,
+MIR_DPX_1D_PCT_G_O,S1,Constante absoluta,
+MIR_DPX_1D_PCT_C_O,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PUR_O,S1,Constante absoluta,
+MIR_DPX_1D_PCT_PIR_O,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_GLB,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_GLB,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_GLB,S1,Constante absoluta,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_T1,S1,Constante absoluta,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_T1,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_T1,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_T1,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_T1,S1,Constante absoluta,
+CYR_DPX_3D_STACK_T1,S1,Constante absoluta,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_P1,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_P1,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_P1,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_P1,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_B,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_B,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_B,S1,Constante absoluta,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_P2,S1,Constante absoluta,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P2,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_P2,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_P2,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_P2,S1,Constante absoluta,
+CYR_DPX_3D_END_DIST_O,S1,Constante absoluta,
+CYR_DPX_3D_CHI_ANGLE_SD_O,S1,Constante absoluta,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_O,S1,Constante absoluta,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_O,S1,Constante absoluta,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_O,S1,Constante absoluta,
+CYR_DPX_3D_BP_TOTAL_O,S1,Constante absoluta,
+CYR_DPX_3D_BP_CAN_O,S1,Constante absoluta,
+CYR_DPX_3D_BP_NC_O,S1,Constante absoluta,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_T1,S1,Constante absoluta,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_T1,S1,Constante absoluta,
+MIR_DPX_3D_BP_TOTAL_T1,S1,Constante absoluta,
+MIR_DPX_3D_BP_CAN_T1,S1,Constante absoluta,
+MIR_DPX_3D_BP_NC_T1,S1,Constante absoluta,
+MIR_DPX_3D_STACK_T1,S1,Constante absoluta,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_P1,S1,Constante absoluta,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P1,S1,Constante absoluta,
+MIR_DPX_3D_BP_TOTAL_P1,S1,Constante absoluta,
+MIR_DPX_3D_BP_CAN_P1,S1,Constante absoluta,
+MIR_DPX_3D_BP_NC_P1,S1,Constante absoluta,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_P2,S1,Constante absoluta,
+MIR_DPX_3D_BP_TOTAL_P2,S1,Constante absoluta,
+MIR_DPX_3D_BP_CAN_P2,S1,Constante absoluta,
+MIR_DPX_3D_BP_NC_P2,S1,Constante absoluta,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_O,S1,Constante absoluta,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_O,S1,Constante absoluta,
+MIR_DPX_3D_BP_TOTAL_O,S1,Constante absoluta,
+MIR_DPX_3D_BP_CAN_O,S1,Constante absoluta,
+MIR_DPX_3D_BP_NC_O,S1,Constante absoluta,
+DPX_3D_END_DIST_INTER_T1,S1,Constante absoluta,
+DPX_3D_BP_NC_T1,S1,Constante absoluta,
+DPX_3D_STACK_T1,S1,Constante absoluta,
+DPX_3D_BP_NC_P1,S1,Constante absoluta,
+DPX_3D_BP_NC_P2,S1,Constante absoluta,
+DPX_3D_END_DIST_INTER_O,S1,Constante absoluta,
+CYR_ISO_1D_PCT_C_GLB,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_GLB ; CYR_ISO_1D_PCT_U_GLB ; CYR_ISO_1D_PCT_G_GLB
+CYR_ISO_1D_PCT_PIR_GLB,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_GLB
+CYR_ISO_1D_PCT_C_P1,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_P1 ; CYR_ISO_1D_PCT_U_P1 ; CYR_ISO_1D_PCT_G_P1
+CYR_ISO_1D_PCT_PIR_P1,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_P1
+CYR_ISO_1D_PCT_C_B,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_B ; CYR_ISO_1D_PCT_U_B ; CYR_ISO_1D_PCT_G_B
+CYR_ISO_1D_PCT_PIR_B,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_B
+CYR_ISO_1D_PCT_C_P2,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_P2 ; CYR_ISO_1D_PCT_U_P2 ; CYR_ISO_1D_PCT_G_P2
+CYR_ISO_1D_PCT_PIR_P2,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_P2
+CYR_ISO_2D_ACCES_POS_GLB,S2,Identidad exacta: ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_GLB
+CYR_ISO_2D_ACCES_POS_T1,S2,Identidad exacta: ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_T1
+CYR_ISO_2D_ACCES_POS_P1,S2,Identidad exacta: ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_P1
+CYR_ISO_2D_ACCES_POS_B,S2,Identidad exacta: ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_B
+CYR_ISO_2D_ACCES_POS_P2,S2,Identidad exacta: ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_P2
+CYR_ISO_3D_SASA_BASES_PCT_GLB,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_GLB
+CYR_ISO_3D_SASA_BASES_PCT_P1,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_P1
+CYR_ISO_3D_SASA_BASES_PCT_B,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_B
+CYR_ISO_3D_SASA_BASES_PCT_P2,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_P2
+CYR_DPX_1D_PCT_C_GLB,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_GLB ; CYR_DPX_1D_PCT_U_GLB ; CYR_DPX_1D_PCT_G_GLB
+CYR_DPX_1D_PCT_PIR_GLB,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_GLB
+CYR_DPX_1D_PCT_C_P1,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_P1 ; CYR_DPX_1D_PCT_U_P1 ; CYR_DPX_1D_PCT_G_P1
+CYR_DPX_1D_PCT_PIR_P1,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_P1
+CYR_DPX_1D_PCT_C_B,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_B ; CYR_DPX_1D_PCT_U_B ; CYR_DPX_1D_PCT_G_B
+CYR_DPX_1D_PCT_PIR_B,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_B
+CYR_DPX_1D_PCT_C_P2,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_P2 ; CYR_DPX_1D_PCT_U_P2 ; CYR_DPX_1D_PCT_G_P2
+CYR_DPX_1D_PCT_PIR_P2,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_P2
+CYR_DPX_1D_PCT_C_O,S2,Identidad exacta: PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_O ; CYR_DPX_1D_PCT_U_O ; CYR_DPX_1D_PCT_G_O
+CYR_DPX_1D_PCT_PIR_O,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_O
+MIR_DPX_1D_PCT_C_P1,S2,Identidad exacta: PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_P1 ; MIR_DPX_1D_PCT_U_P1 ; MIR_DPX_1D_PCT_G_P1
+MIR_DPX_1D_PCT_PIR_P1,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_P1
+MIR_DPX_1D_PCT_C_B,S2,Identidad exacta: PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_B ; MIR_DPX_1D_PCT_U_B ; MIR_DPX_1D_PCT_G_B
+MIR_DPX_1D_PCT_PIR_B,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_B
+MIR_DPX_1D_PCT_PIR_P2,S2,Identidad exacta: PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_P2
+CYR_DPX_3D_SASA_BASES_PCT_GLB,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_GLB
+CYR_DPX_3D_SASA_BASES_PCT_P1,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_P1
+CYR_DPX_3D_SASA_BASES_PCT_B,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_B
+CYR_DPX_3D_SASA_BASES_PCT_P2,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_P2
+CYR_DPX_3D_SASA_BASES_PCT_O,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_O
+MIR_DPX_3D_SASA_BASES_PCT_GLB,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_GLB
+MIR_DPX_3D_BP_TOTAL_GLB,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_GLB ; MIR_DPX_3D_BP_NC_GLB
+MIR_DPX_3D_SASA_BASES_PCT_P1,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_P1
+MIR_DPX_3D_SASA_BASES_PCT_B,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_B
+MIR_DPX_3D_BP_TOTAL_B,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_B ; MIR_DPX_3D_BP_NC_B
+MIR_DPX_3D_SASA_BASES_PCT_P2,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_P2
+MIR_DPX_3D_SASA_BASES_PCT_O,S2,Identidad exacta: SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_O
+DPX_TD_HYBRIDIZATION_DG_GLB,S2,Identidad exacta: NET_DG = HYB_DG + UNF_A + UNF_B (V2),DPX_TD_NET_DG_GLB ; DPX_TD_UNFOLDING_A_DG_GLB ; DPX_TD_UNFOLDING_B_DG_GLB
+DPX_TD_CYR_MIR_ACCES_DG_COST_GLB,S2,Identidad exacta: ACCES_COST = UNF_A + UNF_B,DPX_TD_UNFOLDING_A_DG_GLB ; DPX_TD_UNFOLDING_B_DG_GLB
+DPX_3D_BP_TOTAL_GLB,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_GLB ; DPX_3D_BP_NC_GLB
+DPX_3D_BP_TOTAL_T1,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_T1 ; DPX_3D_BP_NC_T1
+DPX_3D_BP_TOTAL_P1,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_P1 ; DPX_3D_BP_NC_P1
+DPX_3D_BP_TOTAL_B,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_B ; DPX_3D_BP_NC_B
+DPX_3D_BP_TOTAL_P2,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_P2 ; DPX_3D_BP_NC_P2
+DPX_3D_BP_TOTAL_O,S2,Identidad exacta: BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_O ; DPX_3D_BP_NC_O
+CYR_ISO_2D_LEN_REAL_GLB,S3,Duplicado de linaje,CYR_ISO_1D_LEN_REAL_GLB
+CYR_DPX_1D_LEN_REAL_GLB,S3,Duplicado de linaje,CYR_ISO_1D_LEN_REAL_GLB
+CYR_DPX_1D_PCT_A_GLB,S3,Duplicado de linaje,CYR_ISO_1D_PCT_A_GLB
+CYR_DPX_1D_PCT_U_GLB,S3,Duplicado de linaje,CYR_ISO_1D_PCT_U_GLB
+CYR_DPX_1D_PCT_G_GLB,S3,Duplicado de linaje,CYR_ISO_1D_PCT_G_GLB
+CYR_DPX_1D_PCT_PUR_GLB,S3,Duplicado de linaje,CYR_ISO_1D_PCT_PUR_GLB
+CYR_DPX_1D_N_MOD_GLB,S3,Duplicado de linaje,CYR_ISO_1D_N_MOD_GLB
+MIR_DPX_1D_N_MOD_GLB,S3,Duplicado de linaje,CYR_ISO_1D_N_MOD_GLB

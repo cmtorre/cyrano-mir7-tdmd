@@ -1,0 +1,174 @@
+ALINEACION 2 PARA IA DE PROGRAMACION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex WT_miR7:
+
+WT (26 nt) - Hebra A
+secuencia (5'-3'): 	AACAACAAAAUCACCAAUGUCUUCCA
+ANCHOR_CYR: 		nt 26
+P1_CYR: 		nt 19-25
+B_CYR: 			nt 15-18
+P2_CYR: 		nt 1-14
+OVERHANG_CYR: 		NA
+
+miR7 (24 nt) - Hebra B
+secuencia (5'-3'): 	UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 		nt 1
+P1_MIR: 		nt 2 - 8
+B_MIR: 			nt 9 - 10 
+P2_MIR: 		nt 11 - 24
+OVERHANG_MIR:		NA
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\1.WT_MIR\WT_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\1.WT_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\1.WT_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M1_miR7:
+
+M1 (24 nt) 
+secuencia: AACAACAAAAUCACCAAUCUUCCA
+ANCHOR_CYR:	nt 24
+P1_CYR: 	nt 18 - 23
+B_CYR: 		nt 15 - 17
+P2_CYR: 	nt 1 - 14
+OVERHANG_CYR:	NA
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	nt 2 - 7
+B_MIR: 		nt 8 - 10
+P2_MIR: 	nt 11 - 24 
+OVERHANG_MIR:	NA
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\2.M1_MIR\M1_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\2.M1_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\2.M1_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M2_miR7:
+
+M2 (24 nt) 
+secuencia: AACAACAAAAUCACCAAUGCUCCA
+ANCHOR_CYR: 	nt 24
+P1_CYR: 	nt 21 - 23
+B_CYR: 		nt 15 -20
+P2_CYR: 	nt 1 - 14
+OVERHANG_CYR:	NA
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	nt 2 - 4
+B_MIR: 		nt 5 - 10
+P2_MIR: 	nt 11 - 24
+OVERHANG_MIR:	NA
+
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\3.M2_MIR\M2_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\3.M2_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\3.M2_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M3_miR7:
+
+M3 (21 nt) 
+secuencia: AACAACAAAAUCACCAAUGCA
+ANCHOR_CYR: 	nt 21
+P1_CYR: 	NA
+B_CYR: 		NA
+P2_CYR: 	nt 1 - 14
+OVERHANG_CYR:	nt 15 - 20
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	NA
+B_MIR: 		NA
+P2_MIR: 	nt 11 - 24
+OVERHANG_MIR:	nt 2 - 10
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\4.M3_MIR\M3_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\4.M3_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\4.M3_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M4_miR7:
+
+M4 (20 nt) 
+secuencia: AACAACAAAAUCAUCUUCCA
+ANCHOR_CYR: 	nt 20
+P1_CYR: 	nt 14 -19
+B_CYR: 		NA
+P2_CYR: 	nt 1 - 13
+OVERHANG_CYR:	NA
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	nt 2 - 7
+B_MIR: 		nt 8 - 11
+P2_MIR: 	nt nt 12 - 24
+OVERHANG_MIR:	NA
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\5.M4_MIR\M4_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\5.M4_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\5.M4_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M5_miR7:
+
+M5 (17 nt) 
+secuencia: AACAACAAAAUCUUCCA
+ANCHOR_CYR: 	nt 17
+P1_CYR: 	nt 11 - 16
+B_CYR: 		NA
+P2_CYR: 	nt 1 - 10
+OVERHANG_CYR:	NA
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	nt 2 - 7
+B_MIR: 		nt 8 - 14
+P2_MIR: 	nt nt 15 - 24
+OVERHANG_MIR:	NA
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\6.M5_MIR\M5_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\6.M5_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\6.M5_MIR\RG_END_DIST"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Duplex M6_miR7:
+
+M6 (16 nt) 
+secuencia: AACAACAAAAUCACCA
+ANCHOR_CYR: 	nt 16
+P1_CYR: 	NA
+B_CYR: 		NA
+P2_CYR: 	nt 1 - 14
+OVERHANG_CYR:	nt 15
+
+miR7 (24 nt) 
+secuencia: UGGAAGACUAGUGAUUUUGUUGUU
+ANCHOR_MIR: 	nt 1
+P1_MIR: 	NA
+B_MIR: 		NA
+P2_MIR: 	nt 11 - 24
+OVERHANG_MIR:	nt 2 - 10
+
+ruta .pdb: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\7.M6_MIR\M6_miR7.pdb"
+ruta output CHI_SUGAR: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\7.M6_MIR\CHI_SUGAR"
+ruta output RG_END_DIST: "C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-4\6. ChimeraX\7.M6_MIR\RG_END_DIST"
+
+
+
+
+

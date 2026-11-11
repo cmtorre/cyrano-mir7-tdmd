@@ -1,0 +1,21 @@
+﻿CONFIG,K,PARTICION,ARI_ARQUITECTURA
+rangos+correlation+average,2,"{WT,M1,M2} | {M3,M4,M5,M6}",0.588
+rangos+correlation+complete,2,"{WT,M1,M2} | {M3,M4,M5,M6}",0.588
+rangos+euclidean+ward,2,"{WT,M1,M2} | {M3,M4,M5,M6}",0.588
+zscore+correlation+complete,2,"{WT,M1,M2} | {M3,M4,M5,M6}",0.588
+rangos+euclidean+average,2,"{WT,M1,M2,M3,M6} | {M4,M5}",0.442
+rangos+euclidean+complete,2,"{WT,M1,M2,M4,M5} | {M3,M6}",0.442
+zscore+correlation+average,2,"{WT,M1,M2,M3,M6} | {M4,M5}",0.442
+zscore+euclidean+average,2,"{WT,M1,M2,M3,M6} | {M4,M5}",0.442
+zscore+euclidean+complete,2,"{WT,M1,M2,M3,M6} | {M4,M5}",0.442
+zscore+euclidean+ward,2,"{WT,M1,M2,M3,M6} | {M4,M5}",0.442
+rangos+correlation+average,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+rangos+correlation+complete,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+rangos+euclidean+average,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+rangos+euclidean+complete,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+rangos+euclidean+ward,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+zscore+correlation+average,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+zscore+correlation+complete,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+zscore+euclidean+complete,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+zscore+euclidean+ward,3,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1.0
+zscore+euclidean+average,3,"{WT,M1,M2,M3,M6} | {M4} | {M5}",0.316

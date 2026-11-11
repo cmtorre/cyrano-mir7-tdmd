@@ -1,0 +1,598 @@
+﻿VAR_NAME,ORIG_NAME,OE,SOURCE_FILE,SOURCE_SHEET,MOL_CTX,NIV,REG,DTYPE,UNITS,ROLE,NA_TYPE,N_NA,N_IMPUTED_0,N_UNIQUE,FLAG_CONST,FLAG_IDENTITY,DERIVED_FROM,DUPLICATE_OF,NOTES
+Y_MIR7_REL,miR7_rel,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,float64,relativo a WT,RESPONSE,OBS:7,0,0,5,0,,,,
+Y_LOG2_MIR7REL,,OE1,derivada,,EXP,EXP,GLB,float64,log2 relativo a WT,RESPONSE,OBS:7,0,0,5,0,,log2(Y_MIR7_REL),,
+FLAG_CYR_ISO_HAS_P1,,derivada,derivada,,CYR_ISO,FLAG,P1,Int64,,FLAG,OBS:7,0,0,1,1,,CYR_ISO_1D_LEN_P1 > 0,,
+FLAG_CYR_ISO_HAS_B,,derivada,derivada,,CYR_ISO,FLAG,B,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_ISO_1D_LEN_B > 0,,
+FLAG_CYR_DPX_HAS_P1,,derivada,derivada,,CYR_DPX,FLAG,P1,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX_1D_LEN_P1 > 0,,
+FLAG_CYR_DPX_HAS_B,,derivada,derivada,,CYR_DPX,FLAG,B,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX_1D_LEN_B > 0,,
+FLAG_CYR_DPX_HAS_O,,derivada,derivada,,CYR_DPX,FLAG,O,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX_1D_LEN_O > 0,,
+FLAG_MIR_DPX_HAS_P1,,derivada,derivada,,MIR_DPX,FLAG,P1,Int64,,FLAG,OBS:7,0,0,2,0,,MIR_DPX_1D_LEN_P1 > 0,FLAG_CYR_DPX_HAS_P1,
+FLAG_MIR_DPX_HAS_B,,derivada,derivada,,MIR_DPX,FLAG,B,Int64,,FLAG,OBS:7,0,0,2,0,,MIR_DPX_1D_LEN_B > 0,FLAG_CYR_DPX_HAS_P1,
+FLAG_MIR_DPX_HAS_O,,derivada,derivada,,MIR_DPX,FLAG,O,Int64,,FLAG,OBS:7,0,0,2,0,,MIR_DPX_1D_LEN_O > 0,FLAG_CYR_DPX_HAS_O,
+FLAG_DPX_HAS_P1,,derivada,derivada,,DPX,FLAG,P1,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX o MIR_DPX LEN_P1 > 0,FLAG_CYR_DPX_HAS_P1,
+FLAG_DPX_HAS_B,,derivada,derivada,,DPX,FLAG,B,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX o MIR_DPX LEN_B > 0,FLAG_CYR_DPX_HAS_P1,"Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+FLAG_DPX_HAS_O,,derivada,derivada,,DPX,FLAG,O,Int64,,FLAG,OBS:7,0,0,2,0,,CYR_DPX o MIR_DPX LEN_O > 0,FLAG_CYR_DPX_HAS_O,
+CYR_ISO_1D_LEN_REAL_GLB,LEN_REAL,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,6,0,,,,
+CYR_ISO_1D_LEN_ALN_GLB,LEN_ALN,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_1D_PCT_A_GLB,PCT_A,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,,,,
+CYR_ISO_1D_PCT_U_GLB,PCT_U,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_1D_PCT_G_GLB,PCT_G,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_1D_PCT_C_GLB,PCT_C,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,6,0,PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_GLB ; CYR_ISO_1D_PCT_U_GLB ; CYR_ISO_1D_PCT_G_GLB,,
+CYR_ISO_1D_PCT_PUR_GLB,PCT_PUR,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,,,,
+CYR_ISO_1D_PCT_PIR_GLB,PCT_PIR,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_GLB,,
+CYR_ISO_1D_N_MOD_GLB,N_MOD,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,6,0,,,,
+CYR_ISO_1D_LEN_P1,LEN_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,Int64,nt,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_1D_PCT_A_P1,PCT_A_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_1D_PCT_U_P1,PCT_U_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_1D_PCT_G_P1,PCT_G_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_1D_PCT_C_P1,PCT_C_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,4,0,PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_P1 ; CYR_ISO_1D_PCT_U_P1 ; CYR_ISO_1D_PCT_G_P1,,
+CYR_ISO_1D_PCT_PUR_P1,PCT_PUR_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,CYR_ISO_1D_PCT_G_P1,
+CYR_ISO_1D_PCT_PIR_P1,PCT_PIR_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,4,0,PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_P1,,
+CYR_ISO_1D_LEN_B,LEN_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,Int64,nt,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_1D_PCT_A_B,PCT_A_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,2,0,,,,
+CYR_ISO_1D_PCT_U_B,PCT_U_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,2,0,,,,
+CYR_ISO_1D_PCT_G_B,PCT_G_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,1,1,,,,
+CYR_ISO_1D_PCT_C_B,PCT_C_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,2,0,PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_B ; CYR_ISO_1D_PCT_U_B ; CYR_ISO_1D_PCT_G_B,,
+CYR_ISO_1D_PCT_PUR_B,PCT_PUR_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,2,0,,,CYR_ISO_1D_PCT_A_B,
+CYR_ISO_1D_PCT_PIR_B,PCT_PIR_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,2,0,PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_B,,
+CYR_ISO_1D_LEN_P2,LEN_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,Int64,nt,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_1D_PCT_A_P2,PCT_A_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_1D_PCT_U_P2,PCT_U_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_1D_PCT_G_P2,PCT_G_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_1D_PCT_C_P2,PCT_C_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,PCT_C = 100 - (A+U+G),CYR_ISO_1D_PCT_A_P2 ; CYR_ISO_1D_PCT_U_P2 ; CYR_ISO_1D_PCT_G_P2,,
+CYR_ISO_1D_PCT_PUR_P2,PCT_PUR_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,CYR_ISO_1D_PCT_A_P2,
+CYR_ISO_1D_PCT_PIR_P2,PCT_PIR_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,PCT_PIR = 100 - PCT_PUR,CYR_ISO_1D_PCT_PUR_P2,,
+CYR_ISO_2D_LEN_REAL_GLB,LEN_REAL,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,6,0,,,CYR_ISO_1D_LEN_REAL_GLB,
+CYR_ISO_2D_LEN_ALN_GLB,LEN_ALN,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_2D_DG_FOLD_GLB,DG_FOLD,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_2D_DG_ENSEMBLE_GLB,DG_ENSEMBLE,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_2D_FREQ_MFE_GLB,FREQ_MFE,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,fracción [0-1],PREDICTOR,OBS:7,0,0,6,0,,,,
+CYR_ISO_2D_ENS_DIV_GLB,ENS_DIV,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,adimensional,PREDICTOR,OBS:7,0,0,6,0,,,,
+CYR_ISO_2D_PROB_PAIR_GLB,PROB_PAIR,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_2D_ACCES_POS_GLB,ACCES_POS,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_GLB,,
+CYR_ISO_2D_ENT_SITE_GLB,ENT_SITE,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,float64,adimensional,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_2D_PROB_PAIR_T1,PROB_PAIR_T1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,T1,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_2D_ACCES_POS_T1,ACCES_POS_T1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,T1,float64,%,PREDICTOR,OBS:7,0,0,3,0,ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_T1,,
+CYR_ISO_2D_ENT_POS_T1,ENT_POS_T1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,T1,float64,adimensional,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_ISO_2D_PROB_PAIR_P1,PROB_PAIR_P1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P1,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_2D_ACCES_POS_P1,ACCES_POS_P1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P1,float64,%,PREDICTOR,OBS:7,0,0,7,0,ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_P1,,
+CYR_ISO_2D_ENT_POS_P1,ENT_POS_P1,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P1,float64,adimensional,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_2D_PROB_PAIR_B,PROB_PAIR_B,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_2D_ACCES_POS_B,ACCES_POS_B,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_B,,
+CYR_ISO_2D_ENT_POS_B,ENT_POS_B,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,B,float64,adimensional,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_2D_PROB_PAIR_P2,PROB_PAIR_P2,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_2D_ACCES_POS_P2,ACCES_POS_P2,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,ACCES_POS = 100 - PROB_PAIR,CYR_ISO_2D_PROB_PAIR_P2,,
+CYR_ISO_2D_ENT_POS_P2,ENT_POS_P2,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,P2,float64,adimensional,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_RG_GLB,RG,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_END_DIST_GLB,END_DIST,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_MEAN_GLB,CHI_ANGLE_MEAN,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_SD_GLB,CHI_ANGLE_SD,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_GLB,CHI_CLASS_ANTI_PCT,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_MEAN_GLB,PSEUDO_P_SUGAR_MEAN,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_SD_GLB,PSEUDO_P_SUGAR_SD,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_GLB,SUGAR_PUCKER-C3-EXO_PCT,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_3D_SASA_TOTAL_GLB,SASA_TOTAL,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BB_PCT_GLB,SASA_BB_PCT,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BASES_PCT_GLB,SASA_BASES_PCT,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_GLB,,
+CYR_ISO_3D_BP_NC_GLB,NC_PAIRS_TOTAL,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_STACK_GLB,STACKING_TOTAL,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_T1,CHI_ANGLE_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_T1,CHI_CLASS_ANTI_PCT_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_T1,PSEUDO_P_SUGAR_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_T1,SUGAR_PUCKER_C3'-EXO_PCT,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo de región ausente; asignado por bloque (T1)
+CYR_ISO_3D_SASA_TOTAL_T1,SASA_TOTAL_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BB_PCT_T1,SASA_BB_PCT_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BASE_T1,SASA_BASE_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,Tratada como Å² por no llevar sufijo _PCT (decisión 7)
+CYR_ISO_3D_BP_NC_T1,NC_PAIR_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_STACK_T1,STACKING_T1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_RG_P1,RG_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_END_DIST_P1,END_DIST_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_MEAN_P1,CHI_ANGLE_MEAN_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_SD_P1,CHI_ANGLE_SD_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_P1,CHI_CLASS_ANTI_PCT_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P1,PSEUDO_P_SUGAR_MEAN_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_SD_P1,PSEUDO_P_SUGAR_SD_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P1,SUGAR_PUCKER-C3-EXO_PCT_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+CYR_ISO_3D_SASA_TOTAL_P1,SASA_TOTAL_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BB_PCT_P1,SASA_BB_PCT_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BASES_PCT_P1,SASA_BASES_PCT_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_P1,,
+CYR_ISO_3D_BP_NC_P1,NC_PAIR_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_STACK_P1,STACKING_P1,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P1,Int64,conteo,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_3D_RG_B,RG_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,Å,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_END_DIST_B,END_DIST_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,Å,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_CHI_ANGLE_MEAN_B,CHI_ANGLE_MEAN_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,grados,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_CHI_ANGLE_SD_B,CHI_ANGLE_SD_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,grados,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_B,CHI_CLASS_ANTI_PCT_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,1,1,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_MEAN_B,PSEUDO_P_SUGAR_MEAN_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,grados,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_SD_B,PSEUDO_P_SUGAR_SD_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,grados,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_B,SUGAR_PUCKER-C3-EXO_PCT_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,1,1,,,,
+CYR_ISO_3D_SASA_TOTAL_B,SASA_TOTAL_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,Å²,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_SASA_BB_PCT_B,SASA_BB_PCT_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,,,,
+CYR_ISO_3D_SASA_BASES_PCT_B,SASA_BASES_PCT_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,float64,%,PREDICTOR,OBS:4;STRUCT_ABS:3,3,0,4,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_B,,
+CYR_ISO_3D_BP_NC_B,NC_PAIR_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,Int64,conteo,PREDICTOR,OBS:4;STRUCT_ABS:3,0,3,1,1,,,,
+CYR_ISO_3D_STACK_B,STACKING_B,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,B,Int64,conteo,PREDICTOR,OBS:4;STRUCT_ABS:3,0,3,4,0,,,,
+CYR_ISO_3D_RG_P2,RG_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_END_DIST_P2,END_DIST_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_MEAN_P2,CHI_ANGLE_MEAN_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_ANGLE_SD_P2,CHI_ANGLE_SD_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_CHI_CLASS_ANTI_PCT_P2,CHI_CLASS_ANTI_PCT_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P2,PSEUDO_P_SUGAR_MEAN_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_PSEUDO_P_SUGAR_SD_P2,PSEUDO_P_SUGAR_SD_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P2,SUGAR_PUCKER-C3-EXO_PCT_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_ISO_3D_SASA_TOTAL_P2,SASA_TOTAL_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BB_PCT_P2,SASA_BB_PCT_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_ISO_3D_SASA_BASES_PCT_P2,SASA_BASES_PCT_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_ISO_3D_SASA_BB_PCT_P2,,
+CYR_ISO_3D_BP_NC_P2,NC_PAIR_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_ISO_3D_STACK_P2,STACKING_P2,OE2,2.3.OE2_Result-est-terc__Matriz_MREs.xlsx,A_FINAL_MREs,CYR_ISO,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,6,0,,,,
+MIR_ISO_1D_LEN_REAL_GLB,LEN_REAL,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_LEN_ALN_GLB,LEN_ALN,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_A_GLB,PCT_A,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_U_GLB,PCT_U,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_G_GLB,PCT_G,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_C_GLB,PCT_C,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_ISO_1D_PCT_A_GLB ; MIR_ISO_1D_PCT_U_GLB ; MIR_ISO_1D_PCT_G_GLB,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PUR_GLB,PCT_PUR,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PIR_GLB,PCT_PIR,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_ISO_1D_PCT_PUR_GLB,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_LEN_P1,LEN_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_A_P1,PCT_A_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_U_P1,PCT_U_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_G_P1,PCT_G_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_C_P1,PCT_C_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_ISO_1D_PCT_A_P1 ; MIR_ISO_1D_PCT_U_P1 ; MIR_ISO_1D_PCT_G_P1,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PUR_P1,PCT_PUR_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PIR_P1,PCT_PIR_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_ISO_1D_PCT_PUR_P1,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_LEN_B,LEN_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_A_B,PCT_A_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_U_B,PCT_U_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_G_B,PCT_G_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_C_B,PCT_C_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_ISO_1D_PCT_A_B ; MIR_ISO_1D_PCT_U_B ; MIR_ISO_1D_PCT_G_B,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PUR_B,PCT_PUR_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PIR_B,PCT_PIR_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_ISO_1D_PCT_PUR_B,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_LEN_P2,LEN_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_A_P2,PCT_A_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_U_P2,PCT_U_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_G_P2,PCT_G_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_C_P2,PCT_C_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_ISO_1D_PCT_A_P2 ; MIR_ISO_1D_PCT_U_P2 ; MIR_ISO_1D_PCT_G_P2,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PUR_P2,PCT_PUR_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_1D_PCT_PIR_P2,PCT_PIR_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_ISO_1D_PCT_PUR_P2,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_LEN_REAL_GLB,LEN,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_DG_FOLD_GLB,DG_FOLD,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_DG_ENSEMBLE_GLB,DG_ENSEMBLE,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_FREQ_MFE_GLB,FREQ_MFE,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,fracción [0-1],PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENS_DIV_GLB,ENS_DIV,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_PROB_PAIR_GLB,PROB_PAIR,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ACCES_POS_GLB,ACCES_POS,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,ACCES_POS = 100 - PROB_PAIR,MIR_ISO_2D_PROB_PAIR_GLB,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENT_SITE_GLB,ENT_SITE,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_PROB_PAIR_T1,PROB_PAIR_T1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ACCES_POS_T1,ACCES_POS_T1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,ACCES_POS = 100 - PROB_PAIR,MIR_ISO_2D_PROB_PAIR_T1,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENT_POS_T1,ENT_POS_T1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,T1,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_PROB_PAIR_P1,PROB_PAIR_P1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ACCES_POS_P1,ACCES_POS_P1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,ACCES_POS = 100 - PROB_PAIR,MIR_ISO_2D_PROB_PAIR_P1,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENT_POS_P1,ENT_POS_P1,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P1,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_PROB_PAIR_B,PROB_PAIR_B,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ACCES_POS_B,ACCES_POS_B,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,ACCES_POS = 100 - PROB_PAIR,MIR_ISO_2D_PROB_PAIR_B,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENT_POS_B,ENT_POS_B,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,B,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_PROB_PAIR_P2,PROB_PAIR_P3,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo P3 corregido a P2 según bloque | OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ACCES_POS_P2,ACCES_POS_P3,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,ACCES_POS = 100 - PROB_PAIR,MIR_ISO_2D_PROB_PAIR_P2,,sufijo P3 corregido a P2 según bloque | OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_2D_ENT_POS_P2,ENT_POS_P3,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,P2,float64,adimensional,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo P3 corregido a P2 según bloque | OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_RG_GLB,RG,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_END_DIST_GLB,END_DIST,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_MEAN_GLB,CHI_ANGLE_MEAN,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_SD_GLB,CHI_ANGLE_SD,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_GLB,CHI_CLASS_ANTI_PCT,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_GLB,PSEUDO_P_SUGAR_MEAN,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_GLB,PSEUDO_P_SUGAR_SD,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_GLB,SUGAR_PUCKER-C3-EXO_PCT,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_TOTAL_GLB,SASA_TOTAL,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BB_PCT_GLB,SASA_BB_PCT,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BASES_PCT_GLB,SASA_BASES_PCT,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_ISO_3D_SASA_BB_PCT_GLB,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_BP_NC_GLB,NC_PAIRS_TOTAL,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_STACK_GLB,STACKING_TOTAL,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_T1,CHI_ANGLE_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_T1,CHI_CLASS_ANTI_PCT_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_T1,PSEUDO_P_SUGAR_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_T1,SUGAR_PUCKER_C3'-EXO_PCT,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo de región ausente; asignado por bloque (T1) | OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_TOTAL_T1,SASA_TOTAL_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BB_PCT_T1,SASA_BB_PCT_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BASE_T1,SASA_BASE_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,Tratada como Å² por no llevar sufijo _PCT (decisión 7) | OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_BP_NC_T1,NC_PAIR_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_STACK_T1,STACKING_T1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_RG_P1,RG_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_END_DIST_P1,END_DIST_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_MEAN_P1,CHI_ANGLE_MEAN_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_SD_P1,CHI_ANGLE_SD_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_P1,CHI_CLASS_ANTI_PCT_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P1,PSEUDO_P_SUGAR_MEAN_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_P1,PSEUDO_P_SUGAR_SD_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P1,SUGAR_PUCKER-C3-EXO_PCT_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_TOTAL_P1,SASA_TOTAL_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BB_PCT_P1,SASA_BB_PCT_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BASES_PCT_P1,SASA_BASES_PCT_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,float64,%,PREDICTOR,OBS:7,0,0,1,1,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_ISO_3D_SASA_BB_PCT_P1,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_BP_NC_P1,NC_PAIR_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_STACK_P1,STACKING_P1,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_RG_B,RG_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_END_DIST_B,END_DIST_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_MEAN_B,CHI_ANGLE_MEAN_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_SD_B,CHI_ANGLE_SD_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_B,CHI_CLASS_ANTI_PCT_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_B,PSEUDO_P_SUGAR_MEAN_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_B,PSEUDO_P_SUGAR_SD_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_B,SUGAR_PUCKER-C3-EXO_PCT_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_TOTAL_B,SASA_TOTAL_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BB_PCT_B,SASA_BB_PCT_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BASES_PCT_B,SASA_BASES_PCT_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,float64,%,PREDICTOR,OBS:7,0,0,1,1,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_ISO_3D_SASA_BB_PCT_B,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_BP_NC_B,NC_PAIR_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_STACK_B,STACKING_B,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,B,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_RG_P2,RG_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_END_DIST_P2,END_DIST_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_MEAN_P2,CHI_ANGLE_MEAN_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_ANGLE_SD_P2,CHI_ANGLE_SD_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_CHI_CLASS_ANTI_PCT_P2,CHI_CLASS_ANTI_PCT_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_P2,PSEUDO_P_SUGAR_MEAN_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_PSEUDO_P_SUGAR_SD_P2,PSEUDO_P_SUGAR_SD_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SUGAR_PUCKER_C3EXO_PCT_P2,SUGAR_PUCKER-C3-EXO_PCT_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_TOTAL_P2,SASA_TOTAL_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,Å²,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BB_PCT_P2,SASA_BB_PCT_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_SASA_BASES_PCT_P2,SASA_BASES_PCT_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_ISO_3D_SASA_BB_PCT_P2,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_BP_NC_P2,NC_PAIR_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+MIR_ISO_3D_STACK_P2,STACKING_P2,OE3,3.3.OE3_Result_est_terc_MIR.xlsx,A_FINAL_MIR,MIR_ISO,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+CYR_DPX_1D_LEN_REAL_GLB,LEN_REAL,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,6,0,,,CYR_ISO_1D_LEN_REAL_GLB,
+CYR_DPX_1D_LEN_ALN_GLB,LEN_ALN,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_A_GLB,PCT_A,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,,,CYR_ISO_1D_PCT_A_GLB,
+CYR_DPX_1D_PCT_U_GLB,PCT_U,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,CYR_ISO_1D_PCT_U_GLB,
+CYR_DPX_1D_PCT_G_GLB,PCT_G,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,CYR_ISO_1D_PCT_G_GLB,
+CYR_DPX_1D_PCT_C_GLB,PCT_C,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,6,0,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_GLB ; CYR_DPX_1D_PCT_U_GLB ; CYR_DPX_1D_PCT_G_GLB,CYR_ISO_1D_PCT_C_GLB,
+CYR_DPX_1D_PCT_PUR_GLB,PCT_PUR,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,,,CYR_ISO_1D_PCT_PUR_GLB,
+CYR_DPX_1D_PCT_PIR_GLB,PCT_PIR,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,5,0,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_GLB,CYR_ISO_1D_PCT_PIR_GLB,
+CYR_DPX_1D_N_MOD_GLB,N_MOD,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,6,0,,,CYR_ISO_1D_N_MOD_GLB,
+CYR_DPX_1D_LEN_T1,LEN_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_A_T1,PCT_A_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_U_T1,PCT_U_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_G_T1,PCT_G_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_C_T1,PCT_C_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_T1 ; CYR_DPX_1D_PCT_U_T1 ; CYR_DPX_1D_PCT_G_T1,,
+CYR_DPX_1D_PCT_PUR_T1,PCT_PUR_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_PIR_T1,PCT_PIR_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_T1,,
+CYR_DPX_1D_LEN_P1,LEN_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,Int64,nt,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_DPX_1D_PCT_A_P1,PCT_A_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,1,1,,,,
+CYR_DPX_1D_PCT_U_P1,PCT_U_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,3,0,,,,
+CYR_DPX_1D_PCT_G_P1,PCT_G_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,,,,
+CYR_DPX_1D_PCT_C_P1,PCT_C_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,3,0,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_P1 ; CYR_DPX_1D_PCT_U_P1 ; CYR_DPX_1D_PCT_G_P1,,
+CYR_DPX_1D_PCT_PUR_P1,PCT_PUR_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,,,CYR_DPX_1D_PCT_G_P1,
+CYR_DPX_1D_PCT_PIR_P1,PCT_PIR_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_P1,,
+CYR_DPX_1D_LEN_B,LEN_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,Int64,nt,PREDICTOR,OBS:7,0,0,4,0,,,,
+CYR_DPX_1D_PCT_A_B,PCT_A_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_1D_PCT_U_B,PCT_U_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_1D_PCT_G_B,PCT_G_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,,,,
+CYR_DPX_1D_PCT_C_B,PCT_C_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_B ; CYR_DPX_1D_PCT_U_B ; CYR_DPX_1D_PCT_G_B,,
+CYR_DPX_1D_PCT_PUR_B,PCT_PUR_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,,,,
+CYR_DPX_1D_PCT_PIR_B,PCT_PIR_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_B,,
+CYR_DPX_1D_LEN_P2,LEN_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,Int64,nt,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_1D_PCT_A_P2,PCT_A_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_1D_PCT_U_P2,PCT_U_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_1D_PCT_G_P2,PCT_G_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_1D_PCT_C_P2,PCT_C_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_P2 ; CYR_DPX_1D_PCT_U_P2 ; CYR_DPX_1D_PCT_G_P2,,
+CYR_DPX_1D_PCT_PUR_P2,PCT_PUR_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,CYR_DPX_1D_PCT_A_P2,
+CYR_DPX_1D_PCT_PIR_P2,PCT_PIR_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_P2,,
+CYR_DPX_1D_LEN_O,LEN_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,Int64,nt,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_1D_PCT_A_O,PCT_A_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_1D_PCT_U_O,PCT_U_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_1D_PCT_G_O,PCT_G_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,CYR_DPX_1D_PCT_U_O,
+CYR_DPX_1D_PCT_C_O,PCT_C_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,PCT_C = 100 - (A+U+G),CYR_DPX_1D_PCT_A_O ; CYR_DPX_1D_PCT_U_O ; CYR_DPX_1D_PCT_G_O,,
+CYR_DPX_1D_PCT_PUR_O,PCT_PUR_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_1D_PCT_PIR_O,PCT_PIR_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,PCT_PIR = 100 - PCT_PUR,CYR_DPX_1D_PCT_PUR_O,,
+MIR_DPX_1D_LEN_REAL_GLB,LEN,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_A_GLB,PCT_A,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_U_GLB,PCT_U,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_G_GLB,PCT_G,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_C_GLB,PCT_C,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_GLB ; MIR_DPX_1D_PCT_U_GLB ; MIR_DPX_1D_PCT_G_GLB,,
+MIR_DPX_1D_PCT_PUR_GLB,PCT_PUR,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_PIR_GLB,PCT_PIR,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_GLB,,
+MIR_DPX_1D_N_MOD_GLB,N_MOD,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,6,0,,,CYR_ISO_1D_N_MOD_GLB,
+MIR_DPX_1D_LEN_T1,LEN_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,Int64,nt,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_A_T1,PCT_A_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_U_T1,PCT_U_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_G_T1,PCT_G_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_C_T1,PCT_C_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_T1 ; MIR_DPX_1D_PCT_U_T1 ; MIR_DPX_1D_PCT_G_T1,,
+MIR_DPX_1D_PCT_PUR_T1,PCT_PUR_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_1D_PCT_PIR_T1,PCT_PIR_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_T1,,
+MIR_DPX_1D_LEN_P1,LEN_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,Int64,nt,PREDICTOR,OBS:7,0,0,4,0,,,CYR_DPX_1D_LEN_P1,
+MIR_DPX_1D_PCT_A_P1,PCT_A_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,3,0,,,CYR_DPX_1D_PCT_U_P1,
+MIR_DPX_1D_PCT_U_P1,PCT_U_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,1,1,,,,
+MIR_DPX_1D_PCT_G_P1,PCT_G_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,3,0,,,CYR_DPX_1D_PCT_C_P1,
+MIR_DPX_1D_PCT_C_P1,PCT_C_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_P1 ; MIR_DPX_1D_PCT_U_P1 ; MIR_DPX_1D_PCT_G_P1,CYR_DPX_1D_PCT_G_P1,
+MIR_DPX_1D_PCT_PUR_P1,PCT_PUR_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,,,CYR_DPX_1D_PCT_PIR_P1,
+MIR_DPX_1D_PCT_PIR_P1,PCT_PIR_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_P1,CYR_DPX_1D_PCT_G_P1,
+MIR_DPX_1D_LEN_B,LEN_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,Int64,nt,PREDICTOR,OBS:7,0,0,6,0,,,,
+MIR_DPX_1D_PCT_A_B,PCT_A_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,4,0,,,,
+MIR_DPX_1D_PCT_U_B,PCT_U_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_1D_PCT_G_B,PCT_G_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,4,0,,,,
+MIR_DPX_1D_PCT_C_B,PCT_C_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_B ; MIR_DPX_1D_PCT_U_B ; MIR_DPX_1D_PCT_G_B,,
+MIR_DPX_1D_PCT_PUR_B,PCT_PUR_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,4,0,,,,
+MIR_DPX_1D_PCT_PIR_B,PCT_PIR_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,4,0,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_B,,
+MIR_DPX_1D_LEN_P2,LEN_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,Int64,nt,PREDICTOR,OBS:7,0,0,3,0,,,CYR_DPX_1D_LEN_P2,
+MIR_DPX_1D_PCT_A_P2,PCT_A_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,CYR_DPX_1D_PCT_U_P2,
+MIR_DPX_1D_PCT_U_P2,PCT_U_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,CYR_DPX_1D_PCT_A_P2,
+MIR_DPX_1D_PCT_G_P2,PCT_G_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,CYR_DPX_1D_PCT_C_P2,
+MIR_DPX_1D_PCT_C_P2,PCT_C_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_P2 ; MIR_DPX_1D_PCT_U_P2 ; MIR_DPX_1D_PCT_G_P2,,
+MIR_DPX_1D_PCT_PUR_P2,PCT_PUR_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,CYR_DPX_1D_PCT_PIR_P2,
+MIR_DPX_1D_PCT_PIR_P2,PCT_PIR_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,float64,%,PREDICTOR,OBS:7,0,0,3,0,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_P2,CYR_DPX_1D_PCT_A_P2,
+MIR_DPX_1D_LEN_O,LEN_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,Int64,nt,PREDICTOR,OBS:7,0,0,2,0,,,,
+MIR_DPX_1D_PCT_A_O,PCT_A_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_1D_PCT_U_O,PCT_U_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_1D_PCT_G_O,PCT_G_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_1D_PCT_C_O,PCT_C_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,PCT_C = 100 - (A+U+G),MIR_DPX_1D_PCT_A_O ; MIR_DPX_1D_PCT_U_O ; MIR_DPX_1D_PCT_G_O,,
+MIR_DPX_1D_PCT_PUR_O,PCT_PUR_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_1D_PCT_PIR_O,PCT_PIR_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,PCT_PIR = 100 - PCT_PUR,MIR_DPX_1D_PCT_PUR_O,,
+CYR_DPX_3D_RG_GLB,RG,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_END_DIST_GLB,END_DIST,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_ANGLE_MEAN_GLB,CHI_ANGLE_MEAN,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_ANGLE_SD_GLB,CHI_ANGLE_SD,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_GLB,CHI_CLASS_ANTI_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_GLB,PSEUDO_P_SUGAR_MEAN,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_GLB,PSEUDO_P_SUGAR_SD,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_GLB,SUGAR_PUCKER-C3-EXO_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_3D_SASA_TOTAL_GLB,SASA_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_GLB,SASA_BB_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BASES_PCT_GLB,SASA_BASES_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_GLB,,
+CYR_DPX_3D_BP_TOTAL_GLB,BASE_PAIRS_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_GLB ; CYR_DPX_3D_BP_NC_GLB,,
+CYR_DPX_3D_BP_CAN_GLB,CAN_BASE_PAIRS,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_BP_NC_GLB,NC_BASE_PAIRS,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_STACK_GLB,STACKING_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,6,0,,,,
+CYR_DPX_3D_CHI_ANGLE_T1,CHI_ANGLE_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_T1,CHI_CLASS_ANTI_PCT_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_T1,PSEUDO_P_SUGAR_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_T1,SUGAR_PUCKER_C3'-EXO_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo de región ausente; asignado por bloque (T1)
+CYR_DPX_3D_SASA_TOTAL_T1,SASA_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_T1,SASA_BB_PCT_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BASE_T1,SASA_BASE_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,Tratada como Å² por no llevar sufijo _PCT (decisión 7)
+CYR_DPX_3D_BP_TOTAL_T1,BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_T1 ; CYR_DPX_3D_BP_NC_T1,,
+CYR_DPX_3D_BP_CAN_T1,CAN_BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_BP_NC_T1,NC_BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_STACK_T1,STACKING_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_RG_P1,RG_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_END_DIST_P1,END_DIST_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_CHI_ANGLE_MEAN_P1,CHI_ANGLE_MEAN_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_CHI_ANGLE_SD_P1,CHI_ANGLE_SD_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_P1,CHI_CLASS_ANTI_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,1,1,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_P1,PSEUDO_P_SUGAR_MEAN_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_P1,PSEUDO_P_SUGAR_SD_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P1,SUGAR_PUCKER-C3-EXO_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,,,,
+CYR_DPX_3D_SASA_TOTAL_P1,SASA_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,Å²,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_P1,SASA_BB_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+CYR_DPX_3D_SASA_BASES_PCT_P1,SASA_BASES_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_P1,,
+CYR_DPX_3D_BP_TOTAL_P1,BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_P1 ; CYR_DPX_3D_BP_NC_P1,,
+CYR_DPX_3D_BP_CAN_P1,CAN_BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,,,,
+CYR_DPX_3D_BP_NC_P1,NC_BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,,,,
+CYR_DPX_3D_STACK_P1,STACKING_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,5,0,,,,
+CYR_DPX_3D_RG_B,RG_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,Å,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_END_DIST_B,END_DIST_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,Å,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_CHI_ANGLE_MEAN_B,CHI_ANGLE_MEAN_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,grados,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_CHI_ANGLE_SD_B,CHI_ANGLE_SD_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,grados,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_B,CHI_CLASS_ANTI_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_B,PSEUDO_P_SUGAR_MEAN_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,grados,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_B,PSEUDO_P_SUGAR_SD_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,grados,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_B,SUGAR_PUCKER-C3-EXO_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,2,0,,,,
+CYR_DPX_3D_SASA_TOTAL_B,SASA_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,Å²,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_B,SASA_BB_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+CYR_DPX_3D_SASA_BASES_PCT_B,SASA_BASES_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,float64,%,PREDICTOR,STRUCT_ABS:4;OBS:3,4,0,3,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_B,,
+CYR_DPX_3D_BP_TOTAL_B,BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,Int64,conteo,PREDICTOR,STRUCT_ABS:4;OBS:3,0,4,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_B ; CYR_DPX_3D_BP_NC_B,,
+CYR_DPX_3D_BP_CAN_B,CAN_BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,Int64,conteo,PREDICTOR,STRUCT_ABS:4;OBS:3,0,4,1,1,,,,
+CYR_DPX_3D_BP_NC_B,NC_BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,Int64,conteo,PREDICTOR,STRUCT_ABS:4;OBS:3,0,4,1,1,,,,
+CYR_DPX_3D_STACK_B,STACKING_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,B,Int64,conteo,PREDICTOR,STRUCT_ABS:4;OBS:3,0,4,3,0,,,,
+CYR_DPX_3D_RG_P2,RG_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_END_DIST_P2,END_DIST_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_ANGLE_MEAN_P2,CHI_ANGLE_MEAN_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_ANGLE_SD_P2,CHI_ANGLE_SD_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_P2,CHI_CLASS_ANTI_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_P2,PSEUDO_P_SUGAR_MEAN_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_P2,PSEUDO_P_SUGAR_SD_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P2,SUGAR_PUCKER-C3-EXO_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_SASA_TOTAL_P2,SASA_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_P2,SASA_BB_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+CYR_DPX_3D_SASA_BASES_PCT_P2,SASA_BASES_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_P2,,
+CYR_DPX_3D_BP_TOTAL_P2,BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_P2 ; CYR_DPX_3D_BP_NC_P2,,
+CYR_DPX_3D_BP_CAN_P2,CAN_BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_BP_NC_P2,NC_BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+CYR_DPX_3D_STACK_P2,STACKING_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,3,0,,,,
+CYR_DPX_3D_RG_O,RG_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_3D_END_DIST_O,END_DIST_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;OBS:1;UNDEF:1,6,0,1,1,,,,
+CYR_DPX_3D_CHI_ANGLE_MEAN_O,CHI_ANGLE_MEAN_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_3D_CHI_ANGLE_SD_O,CHI_ANGLE_SD_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:1;UNDEF:1,6,0,1,1,,,,
+CYR_DPX_3D_CHI_CLASS_ANTI_PCT_O,CHI_CLASS_ANTI_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_O,PSEUDO_P_SUGAR_MEAN_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_3D_PSEUDO_P_SUGAR_SD_O,PSEUDO_P_SUGAR_SD_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:1;UNDEF:1,6,0,1,1,,,,
+CYR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_O,SUGAR_PUCKER-C3-EXO_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+CYR_DPX_3D_SASA_TOTAL_O,SASA_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,Å²,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_3D_SASA_BB_PCT_O,SASA_BB_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+CYR_DPX_3D_SASA_BASES_PCT_O,SASA_BASES_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,CYR_DPX_3D_SASA_BB_PCT_O,,
+CYR_DPX_3D_BP_TOTAL_O,BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,BP_TOTAL = BP_CAN + BP_NC,CYR_DPX_3D_BP_CAN_O ; CYR_DPX_3D_BP_NC_O,,
+CYR_DPX_3D_BP_CAN_O,CAN_BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,,,,
+CYR_DPX_3D_BP_NC_O,NC_BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,,,,
+CYR_DPX_3D_STACK_O,STACKING_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,2,0,,,,
+MIR_DPX_3D_RG_GLB,RG,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_END_DIST_GLB,END_DIST,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_ANGLE_MEAN_GLB,CHI_ANGLE_MEAN,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_ANGLE_SD_GLB,CHI_ANGLE_SD,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_GLB,CHI_CLASS_ANTI_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_GLB,PSEUDO_P_SUGAR_MEAN,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_SD_GLB,PSEUDO_P_SUGAR_SD,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_GLB,SUGAR_PUCKER-C3-EXO_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,4,0,,,,
+MIR_DPX_3D_SASA_TOTAL_GLB,SASA_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_GLB,SASA_BB_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BASES_PCT_GLB,SASA_BASES_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_GLB,,
+MIR_DPX_3D_BP_TOTAL_GLB,BASE_PAIRS_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_GLB ; MIR_DPX_3D_BP_NC_GLB,,
+MIR_DPX_3D_BP_CAN_GLB,CAN_BASE_PAIRS,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,,,,
+MIR_DPX_3D_BP_NC_GLB,NC_BASE_PAIRS,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,,,MIR_DPX_3D_BP_CAN_GLB,
+MIR_DPX_3D_STACK_GLB,STACKING_TOTAL,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,5,0,,,,
+MIR_DPX_3D_CHI_ANGLE_T1,CHI_ANGLE_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_T1,CHI_CLASS_ANTI_PCT_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_T1,PSEUDO_P_SUGAR_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_T1,SUGAR_PUCKER_C3'-EXO_PCT,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,sufijo de región ausente; asignado por bloque (T1)
+MIR_DPX_3D_SASA_TOTAL_T1,SASA_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_T1,SASA_BB_PCT_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BASE_T1,SASA_BASE_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,Tratada como Å² por no llevar sufijo _PCT (decisión 7)
+MIR_DPX_3D_BP_TOTAL_T1,BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_T1 ; MIR_DPX_3D_BP_NC_T1,,
+MIR_DPX_3D_BP_CAN_T1,CAN_BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_BP_NC_T1,NC_BASE_PAIR_TOTAL_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_STACK_T1,STACKING_T1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_RG_P1,RG_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_END_DIST_P1,END_DIST_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_ANGLE_MEAN_P1,CHI_ANGLE_MEAN_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_ANGLE_SD_P1,CHI_ANGLE_SD_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_P1,CHI_CLASS_ANTI_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,1,1,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_P1,PSEUDO_P_SUGAR_MEAN_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_SD_P1,PSEUDO_P_SUGAR_SD_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P1,SUGAR_PUCKER-C3-EXO_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,1,1,,,,
+MIR_DPX_3D_SASA_TOTAL_P1,SASA_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,Å²,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_P1,SASA_BB_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SASA_BASES_PCT_P1,SASA_BASES_PCT_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_P1,,
+MIR_DPX_3D_BP_TOTAL_P1,BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_P1 ; MIR_DPX_3D_BP_NC_P1,,
+MIR_DPX_3D_BP_CAN_P1,CAN_BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,,,,
+MIR_DPX_3D_BP_NC_P1,NC_BASE_PAIR_TOTAL_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,,,,
+MIR_DPX_3D_STACK_P1,STACKING_P1,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,5,0,,,CYR_DPX_3D_STACK_P1,
+MIR_DPX_3D_RG_B,RG_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_END_DIST_B,END_DIST_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_ANGLE_MEAN_B,CHI_ANGLE_MEAN_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_ANGLE_SD_B,CHI_ANGLE_SD_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_B,CHI_CLASS_ANTI_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,2,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_B,PSEUDO_P_SUGAR_MEAN_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_SD_B,PSEUDO_P_SUGAR_SD_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,grados,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_B,SUGAR_PUCKER-C3-EXO_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,4,0,,,,
+MIR_DPX_3D_SASA_TOTAL_B,SASA_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,Å²,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_B,SASA_BB_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+MIR_DPX_3D_SASA_BASES_PCT_B,SASA_BASES_PCT_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,float64,%,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_B,,
+MIR_DPX_3D_BP_TOTAL_B,BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,2,0,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_B ; MIR_DPX_3D_BP_NC_B,MIR_DPX_3D_BP_TOTAL_GLB,
+MIR_DPX_3D_BP_CAN_B,CAN_BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,2,0,,,MIR_DPX_3D_BP_CAN_GLB,
+MIR_DPX_3D_BP_NC_B,NC_BASE_PAIR_TOTAL_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,2,0,,,MIR_DPX_3D_BP_CAN_GLB,
+MIR_DPX_3D_STACK_B,STACKING_B,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,B,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,5,0,,,,
+MIR_DPX_3D_RG_P2,RG_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_END_DIST_P2,END_DIST_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_ANGLE_MEAN_P2,CHI_ANGLE_MEAN_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_ANGLE_SD_P2,CHI_ANGLE_SD_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_P2,CHI_CLASS_ANTI_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_P2,PSEUDO_P_SUGAR_MEAN_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_SD_P2,PSEUDO_P_SUGAR_SD_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_P2,SUGAR_PUCKER-C3-EXO_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,2,0,,,,
+MIR_DPX_3D_SASA_TOTAL_P2,SASA_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_P2,SASA_BB_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,,,,
+MIR_DPX_3D_SASA_BASES_PCT_P2,SASA_BASES_PCT_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,float64,%,PREDICTOR,OBS:7,0,0,7,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_P2,,
+MIR_DPX_3D_BP_TOTAL_P2,BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_P2 ; MIR_DPX_3D_BP_NC_P2,,
+MIR_DPX_3D_BP_CAN_P2,CAN_BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_BP_NC_P2,NC_BASE_PAIR_TOTAL_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+MIR_DPX_3D_STACK_P2,STACKING_P2,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,3,0,,,,
+MIR_DPX_3D_RG_O,RG_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_END_DIST_O,END_DIST_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_CHI_ANGLE_MEAN_O,CHI_ANGLE_MEAN_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_CHI_ANGLE_SD_O,CHI_ANGLE_SD_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_CHI_CLASS_ANTI_PCT_O,CHI_CLASS_ANTI_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_O,PSEUDO_P_SUGAR_MEAN_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_PSEUDO_P_SUGAR_SD_O,PSEUDO_P_SUGAR_SD_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,grados,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_SUGAR_PUCKER_C3EXO_PCT_O,SUGAR_PUCKER-C3-EXO_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,
+MIR_DPX_3D_SASA_TOTAL_O,SASA_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,Å²,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_SASA_BB_PCT_O,SASA_BB_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+MIR_DPX_3D_SASA_BASES_PCT_O,SASA_BASES_PCT_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,float64,%,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,SASA_BASES_PCT = 100 - SASA_BB_PCT,MIR_DPX_3D_SASA_BB_PCT_O,,
+MIR_DPX_3D_BP_TOTAL_O,BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,BP_TOTAL = BP_CAN + BP_NC,MIR_DPX_3D_BP_CAN_O ; MIR_DPX_3D_BP_NC_O,,
+MIR_DPX_3D_BP_CAN_O,CAN_BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,,,,
+MIR_DPX_3D_BP_NC_O,NC_BASE_PAIR_TOTAL_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,1,1,,,,
+MIR_DPX_3D_STACK_O,STACKING_O,OE4,4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,3,0,,,,
+DPX_TD_NET_DG_GLB,NET_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,7,0,NET_DG = HYB_DG + ACCES_COST,DPX_TD_HYBRIDIZATION_DG_GLB ; DPX_TD_CYR_MIR_ACCES_DG_COST_GLB,,
+DPX_TD_HYBRIDIZATION_DG_GLB,HYBRIDIZATION_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,6,0,,,,
+DPX_TD_UNFOLDING_A_DG_GLB,UNFOLDING_A_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,3,0,,,,
+DPX_TD_UNFOLDING_B_DG_GLB,UNFOLDING_B_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,2,0,,,,
+DPX_TD_CYR_MIR_ACCES_DG_COST_GLB,CYR_MIR_ACCES_DG_COST,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,5,0,ACCES_COST = UNF_A + UNF_B,DPX_TD_UNFOLDING_A_DG_GLB ; DPX_TD_UNFOLDING_B_DG_GLB,,
+DPX_TD_MFE_DG_GLB,MFE_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,6,0,,,,
+DPX_TD_ENSEMBLE_DG_GLB,ENSEMBLE_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_TD_MFE_FREQ_GLB,MFE_FREQ,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,fracción [0-1],PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_TD_FINAL_DG_GLB,FINAL_DG,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,TD,GLB,float64,kcal/mol,PREDICTOR,OBS:7,0,0,6,0,,,,
+DPX_3D_RG_GLB,RG_GLOBAL_DUPLEX,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_3D_END_DIST_GLB,END_DIST_GLOBAL_DUPLEX,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_3D_BP_TOTAL_GLB,TOTAL_BASE_PAIRS,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,5,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_GLB ; DPX_3D_BP_NC_GLB,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_CAN_GLB,CAN_BASE_PAIRS,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,7,0,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_NC_GLB,NC_BASE_PAIRS,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,3,0,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_STACK_GLB,STACKING,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,GLB,Int64,conteo,PREDICTOR,OBS:7,0,0,5,0,,,,
+DPX_3D_RG_INTER_T1,RG_GLOBAL_INTER_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_3D_END_DIST_INTER_T1,END_DIST__INTER_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,float64,Å,PREDICTOR,UNDEF:7,7,0,0,1,,,,
+DPX_3D_BP_TOTAL_T1,TOTAL_BASE_PAIRS_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_T1 ; DPX_3D_BP_NC_T1,FLAG_CYR_DPX_HAS_P1,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_CAN_T1,CAN_BASE_PAIRS_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,,,FLAG_CYR_DPX_HAS_P1,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_NC_T1,NC_BASE_PAIRS_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_STACK_T1,STACKING_T1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,T1,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,
+DPX_3D_RG_INTER_P1,RG_GLOBAL_INTER_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+DPX_3D_END_DIST_INTER_P1,END_DIST__INTER_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+DPX_3D_BP_TOTAL_P1,TOTAL_BASE_PAIRS_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,4,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_P1 ; DPX_3D_BP_NC_P1,CYR_DPX_1D_LEN_P1,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_CAN_P1,CAN_BASE_PAIRS_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,4,0,,,CYR_DPX_1D_LEN_P1,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_NC_P1,NC_BASE_PAIRS_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,1,1,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_STACK_P1,STACKING_P1,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P1,Int64,conteo,PREDICTOR,OBS:5;STRUCT_ABS:2,0,2,5,0,,,,
+DPX_3D_RG_INTER_B,RG_GLOBAL_INTER_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,float64,Å,PREDICTOR,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,"Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_END_DIST_INTER_B,END_DIST__INTER_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,float64,Å,PREDICTOR,OBS:3;STRUCT_ABS:2;UNDEF:2,4,0,3,0,,,,"Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_BP_TOTAL_B,TOTAL_BASE_PAIRS_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,Int64,conteo,PREDICTOR,OBS:3;STRUCT_ABS:2;UNDEF:2,2,2,2,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_B ; DPX_3D_BP_NC_B,,"Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos | Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_BP_CAN_B,CAN_BASE_PAIRS_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,Int64,conteo,PREDICTOR,OBS:3;STRUCT_ABS:2;UNDEF:2,2,2,2,0,,,,"Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos | Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_BP_NC_B,NC_BASE_PAIRS_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,Int64,conteo,PREDICTOR,OBS:3;STRUCT_ABS:2;UNDEF:2,2,2,3,0,,,,"Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos | Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_STACK_B,STACKING_B,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,B,Int64,conteo,PREDICTOR,OBS:3;STRUCT_ABS:2;UNDEF:2,2,2,3,0,,,,"Bulge asimétrico en M4 y M5 (solo hebra miR, decisión 6)"
+DPX_3D_RG_INTER_P2,RG_GLOBAL_INTER_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_3D_END_DIST_INTER_P2,END_DIST__INTER_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,,,
+DPX_3D_BP_TOTAL_P2,TOTAL_BASE_PAIRS_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,3,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_P2 ; DPX_3D_BP_NC_P2,CYR_DPX_1D_LEN_P2,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_CAN_P2,CAN_BASE_PAIRS_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,3,0,,,CYR_DPX_1D_LEN_P2,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_NC_P2,NC_BASE_PAIRS_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,1,1,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_STACK_P2,STACKING_P2,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,P2,Int64,conteo,PREDICTOR,OBS:7,0,0,2,0,,,,
+DPX_3D_RG_INTER_O,RG_GLOBAL_INTER_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+DPX_3D_END_DIST_INTER_O,END_DIST__INTER_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,float64,Å,PREDICTOR,STRUCT_ABS:5;UNDEF:2,7,0,0,1,,,,
+DPX_3D_BP_TOTAL_O,TOTAL_BASE_PAIRS_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,3,0,BP_TOTAL = BP_CAN + BP_NC,DPX_3D_BP_CAN_O ; DPX_3D_BP_NC_O,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_CAN_O,CAN_BASE_PAIRS_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,2,0,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_BP_NC_O,NC_BASE_PAIRS_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,3,0,,,,Suma de interacciones por residuo de ambas hebras (decisión 5); no equivale a pares únicos
+DPX_3D_STACK_O,STACKING_O,OE5,5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx,A_FINAL_DUPLEX,DPX,3D,O,Int64,conteo,PREDICTOR,STRUCT_ABS:5;OBS:2,0,5,3,0,,,,
+DLT_CYR_3D_RG_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_RG_GLB - CYR_ISO_3D_RG_GLB,,
+DLT_CYR_3D_END_DIST_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_END_DIST_GLB - CYR_ISO_3D_END_DIST_GLB,,
+DLT_CYR_3D_CHI_ANGLE_MEAN_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_CHI_ANGLE_MEAN_GLB - CYR_ISO_3D_CHI_ANGLE_MEAN_GLB,,
+DLT_CYR_3D_CHI_ANGLE_SD_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_CHI_ANGLE_SD_GLB - CYR_ISO_3D_CHI_ANGLE_SD_GLB,,
+DLT_CYR_3D_PSEUDO_P_SUGAR_MEAN_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_GLB - CYR_ISO_3D_PSEUDO_P_SUGAR_MEAN_GLB,,
+DLT_CYR_3D_PSEUDO_P_SUGAR_SD_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_PSEUDO_P_SUGAR_SD_GLB - CYR_ISO_3D_PSEUDO_P_SUGAR_SD_GLB,,
+DLT_CYR_3D_SASA_TOTAL_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,CYR_DPX_3D_SASA_TOTAL_GLB - CYR_ISO_3D_SASA_TOTAL_GLB,,
+DLT_CYR_3D_STACK_GLB,,OE4-OE2,derivada,,DLT_CYR,3D,GLB,float64,conteo,PREDICTOR,OBS:7,0,0,5,0,,CYR_DPX_3D_STACK_GLB - CYR_ISO_3D_STACK_GLB,,
+DLT_MIR_3D_RG_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_RG_GLB - MIR_ISO_3D_RG_GLB,,
+DLT_MIR_3D_END_DIST_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,Å,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_END_DIST_GLB - MIR_ISO_3D_END_DIST_GLB,,
+DLT_MIR_3D_CHI_ANGLE_MEAN_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_CHI_ANGLE_MEAN_GLB - MIR_ISO_3D_CHI_ANGLE_MEAN_GLB,,
+DLT_MIR_3D_CHI_ANGLE_SD_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_CHI_ANGLE_SD_GLB - MIR_ISO_3D_CHI_ANGLE_SD_GLB,,
+DLT_MIR_3D_PSEUDO_P_SUGAR_MEAN_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_GLB - MIR_ISO_3D_PSEUDO_P_SUGAR_MEAN_GLB,,
+DLT_MIR_3D_PSEUDO_P_SUGAR_SD_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,grados,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_PSEUDO_P_SUGAR_SD_GLB - MIR_ISO_3D_PSEUDO_P_SUGAR_SD_GLB,,
+DLT_MIR_3D_SASA_TOTAL_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,Å²,PREDICTOR,OBS:7,0,0,7,0,,MIR_DPX_3D_SASA_TOTAL_GLB - MIR_ISO_3D_SASA_TOTAL_GLB,,
+DLT_MIR_3D_STACK_GLB,,OE4-OE3,derivada,,DLT_MIR,3D,GLB,float64,conteo,PREDICTOR,OBS:7,0,0,5,0,,MIR_DPX_3D_STACK_GLB - MIR_ISO_3D_STACK_GLB,,
+META_EXP_SEQ_REAL,SEQ_REAL,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,category,,META,OBS:7,0,0,7,0,,,,
+META_EXP_LEN_REAL,LEN_REAL,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,Int64,nt,META,OBS:7,0,0,6,0,,,CYR_ISO_1D_LEN_REAL_GLB,
+META_EXP_SEQ_ALN,SEQ_ALN,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,category,,META,OBS:7,0,0,7,0,,,,
+META_EXP_LEN_ALN,LEN_ALN,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,Int64,nt,META,OBS:7,0,0,1,1,,,,
+META_EXP_FIGURA,FIGURA,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,category,,META,OBS:7,0,0,1,1,,,,
+META_EXP_METODO,METODO,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,category,,META,OBS:7,0,0,1,1,,,,
+META_EXP_CONTROL_INT,CONTROL_INT,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,category,,META,OBS:7,0,0,1,1,,,,
+META_EXP_TDMD_SCORE,TDMD_score,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,float64,relativo a WT,META_REDUNDANT,OBS:7,0,0,5,0,TDMD_SCORE = 1 - MIR7_REL,Y_MIR7_REL,,Redundante: 1 - Y_MIR7_REL; excluida del espacio analítico
+META_EXP_N_BIO,N_BIO,OE1,1.OE1_Resultados_Cyranos y miR7-5-P.xlsx,A_FINAL_MREs,EXP,EXP,GLB,Int64,,META,OBS:7,0,0,1,1,,,,
+META_CYR_ISO_1D_SEQ_REAL_GLB,SEQ_REAL,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_REAL,
+META_CYR_ISO_1D_SEQ_ALN_GLB,SEQ_ALN,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_ALN,
+META_CYR_ISO_1D_POS_MOD_GLB,POS_MOD,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,category,,META,OBS:6;NOT_APPLIC:1,1,0,6,0,,,,
+META_CYR_ISO_1D_TYPE_MOD_GLB,TYPE_MOD,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,category,,META,OBS:6;NOT_APPLIC:1,1,0,2,0,,,,
+META_CYR_ISO_1D_REG_MIR_MOD_GLB,REG-MIR_MOD,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,GLB,category,,META,OBS:6;NOT_APPLIC:1,1,0,4,0,,,,
+META_CYR_ISO_1D_NT_T1,NT_T1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,T1,category,,META,OBS:7,0,0,1,1,,,,
+META_CYR_ISO_1D_SEQ_P1,SEQ_P1,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P1,category,,META,OBS:7,0,0,5,0,,,,
+META_CYR_ISO_1D_SEQ_B,SEQ_B,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,B,category,,META,OBS:4;STRUCT_ABS:3,3,0,2,0,,,,
+META_CYR_ISO_1D_SEQ_P2,SEQ_P2,OE2,2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx,A_FINAL_MREs,CYR_ISO,1D,P2,category,,META,OBS:7,0,0,3,0,,,,
+META_CYR_ISO_2D_SEQ_REAL_GLB,SEQ_REAL,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_REAL,
+META_CYR_ISO_2D_SEQ_ALN_GLB,SEQ_ALN,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_ALN,
+META_CYR_ISO_2D_DOTBR_GLB,DOTBR,OE2,2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx,A_FINAL_MREs,CYR_ISO,2D,GLB,category,,META,OBS:7,0,0,6,0,,,,
+META_MIR_ISO_1D_SEQ_REAL_GLB,SEQ_REAL,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_1D_SEQ_ALN_GLB,SEQ_ALN,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,GLB,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_1D_NT_T1,NT_T1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,T1,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_1D_SEQ_P1,SEQ_P1,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P1,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_1D_SEQ_B,SEQ_B,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,B,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_1D_SEQ_P2,SEQ_P2,OE3,3.1.OE3_Result_est_prim_MIR.xlsx,A_FINAL_MIR,MIR_ISO,1D,P2,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_2D_SEQ_REAL_GLB,SEQ,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_MIR_ISO_2D_DOTBR_GLB,DOTBR,OE3,3.2.OE3_Result_est_sec_MIR.xlsx,A_FINAL_MIR,MIR_ISO,2D,GLB,category,,META,OBS:7,0,0,1,1,,,,OE3 N=1 replicado: estado de referencia para deltas; constante por diseño
+META_CYR_DPX_1D_SEQ_REAL_GLB,SEQ_REAL,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_REAL,
+META_CYR_DPX_1D_SEQ_ALN_GLB,SEQ_ALN,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,GLB,category,,META,OBS:7,0,0,7,0,,,META_EXP_SEQ_ALN,
+META_CYR_DPX_1D_NT_T1,NT_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,T1,category,,META,OBS:7,0,0,1,1,,,,
+META_CYR_DPX_1D_SEQ_P1,SEQ_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P1,category,,META,OBS:5;STRUCT_ABS:2,2,0,3,0,,,,
+META_CYR_DPX_1D_SEQ_B,SEQ_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,B,category,,META,STRUCT_ABS:4;OBS:3,4,0,3,0,,,,
+META_CYR_DPX_1D_SEQ_P2,SEQ_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,P2,category,,META,OBS:7,0,0,3,0,,,,
+META_CYR_DPX_1D_SEQ_O,SEQ_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MREs,CYR_DPX,1D,O,category,,META,STRUCT_ABS:5;OBS:2,5,0,2,0,,,,
+META_MIR_DPX_1D_SEQ_REAL_GLB,SEQ,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,GLB,category,,META,OBS:7,0,0,1,1,,,,
+META_MIR_DPX_1D_NT_T1,NT_T1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,T1,category,,META,OBS:7,0,0,1,1,,,,
+META_MIR_DPX_1D_SEQ_P1,SEQ_P1,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P1,category,,META,OBS:5;STRUCT_ABS:2,2,0,3,0,,,,
+META_MIR_DPX_1D_SEQ_B,SEQ_B,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,B,category,,META,OBS:5;STRUCT_ABS:2,2,0,5,0,,,,
+META_MIR_DPX_1D_SEQ_P2,SEQ_P2,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,P2,category,,META,OBS:7,0,0,3,0,,,,
+META_MIR_DPX_1D_SEQ_O,SEQ_O,OE4,4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx,A_FINAL_MIRs,MIR_DPX,1D,O,category,,META,STRUCT_ABS:5;OBS:2,5,0,1,1,,,,

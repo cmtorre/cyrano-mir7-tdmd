@@ -1,0 +1,41 @@
+14:25:25 | INFO    | F2 Iteración 1 v01 | modo INTERMEDIO | fecha 20260925 | pandas 2.3.3
+14:25:25 | INFO    | MÓDULO 2 | Carga y validación
+14:25:25 | INFO    |   NA_MAP de Fase I no encontrado (opcional); el mecanismo se infiere de las banderas
+14:25:25 | INFO    |   RAW_DATASET: N=7 x P=597
+14:25:25 | INFO    | MÓDULO 3 | Roles e imputación V6
+14:25:25 | INFO    |   Espacio analítico: 553 | metadatos: 42 | respuestas: 2
+14:25:25 | INFO    |   [V6] DPX_3D_BP_CAN_B: 2 celdas imputadas con 0 en ['M4', 'M5']
+14:25:25 | INFO    |   [V6] DPX_3D_BP_NC_B: 2 celdas imputadas con 0 en ['M4', 'M5']
+14:25:25 | INFO    | MÓDULO 4 | Poda determinista
+14:25:25 | INFO    |   S1 constantes: -215 -> 338
+14:25:25 | INFO    |   [V2] HYB_DG = NET_DG - UNF_A - UNF_B verificado (máx |residuo| = 3.55e-15)
+14:25:25 | INFO    |   S2 identidades: -52 -> 286
+14:25:25 | INFO    |   S3 duplicados de linaje: -8 -> 278
+14:25:25 | INFO    |   Alias conservados: 24 columnas en 14 grupos
+14:25:25 | INFO    | MÓDULO 5 | Auditoría de límites biofísicos
+14:25:25 | INFO    |   Reglas evaluadas: 313 | variables auditadas: 252 | PASS=246 WARN=6 FAIL=0
+14:25:25 | INFO    |   [CIRC_RISK] CYR_DPX_3D_CHI_ANGLE_SD_B: SD > 90° en ['WT', 'M2']
+14:25:25 | INFO    |   [CIRC_RISK] CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_B: salto > 90° frente a la media global en ['WT']
+14:25:25 | INFO    |   [CIRC_RISK] MIR_DPX_3D_PSEUDO_P_SUGAR_MEAN_B: salto > 90° frente a la media global en ['M4']
+14:25:25 | INFO    |   [CIRC_RISK] MIR_DPX_3D_PSEUDO_P_SUGAR_SD_B: SD > 90° en ['WT']
+14:25:25 | INFO    |   [CIRC_RISK] CYR_DPX_3D_CHI_ANGLE_MEAN_B: pareada con CYR_DPX_3D_CHI_ANGLE_SD_B
+14:25:25 | INFO    |   [CIRC_RISK] CYR_DPX_3D_PSEUDO_P_SUGAR_SD_B: pareada con CYR_DPX_3D_PSEUDO_P_SUGAR_MEAN_B
+14:25:25 | INFO    | MÓDULO 6 | Mecanismo de nulos
+14:25:26 | INFO    |   Columnas con nulos: 87 | patrones únicos: 5
+14:25:26 | INFO    |   [patrón 0001001] 40 cols -> MNAR_ESTRUCTURAL FLAG_CYR_DPX_HAS_P1
+14:25:26 | INFO    |   [patrón 1110110] 18 cols -> MNAR_ESTRUCTURAL FLAG_CYR_DPX_HAS_O
+14:25:26 | INFO    |   [patrón 0001111] 15 cols -> MNAR_ESTRUCTURAL FLAG_CYR_DPX_HAS_B
+14:25:26 | INFO    |   [patrón 0000111] 13 cols -> MNAR_ESTRUCTURAL FLAG_CYR_ISO_HAS_B
+14:25:26 | INFO    |   [patrón 0000110] 1 cols -> MNAR_UNDEF 
+14:25:26 | INFO    | MÓDULO 7 | Diagnóstico NZV (no aplicado)
+14:25:26 | INFO    |   n_minoría=1: 44 (WT como único discrepante: 6) | n_minoría=2: 44
+14:25:26 | INFO    | MÓDULO 8 | Ramas de sensibilidad
+14:25:26 | INFO    |   [CONSERVADOR] NaN <= 0: P=191 | GLB=74, T1=19, P1=25, B=14, P2=49, O=10
+14:25:26 | INFO    |   [INTERMEDIO] NaN <= 2: P=232 | GLB=74, T1=19, P1=50, B=30, P2=49, O=10
+14:25:26 | INFO    |   [PERMISIVO] NaN <= 3: P=245 | GLB=74, T1=19, P1=50, B=43, P2=49, O=10
+14:25:26 | INFO    |   Excluidas en los tres niveles (NaN > 3): 33
+14:25:26 | INFO    | MÓDULO 9 | Diccionario
+14:25:26 | INFO    | MÓDULO 10 | Figuras
+14:25:32 | INFO    | MÓDULO 11 | Exportación
+14:25:32 | INFO    |   Dataset final (INTERMEDIO): N=7 x P=234 (2 respuestas + 232 predictores)
+14:25:32 | INFO    | RESUMEN | S0=553 S1=338 S2=286 S3=278 | CONSERVADOR=191 INTERMEDIO=232 PERMISIVO=245 | FAIL=0 CIRC_RISK=6 alias=24 en 14 grupos

@@ -1,0 +1,21 @@
+﻿CONFIG,ESCALADO,METRICA,ENLACE,K,N_VARS,N_EFECTIVO,PARTICION,GRUPO_WT,GRUPO_M1,GRUPO_M2,GRUPO_M3,GRUPO_M4,GRUPO_M5,GRUPO_M6
+rangos+correlation+average,rangos,correlation,average,2,191,7,"{WT,M1,M2} | {M3,M4,M5,M6}",1,1,1,2,2,2,2
+rangos+correlation+average,rangos,correlation,average,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1,1,1,2,3,3,2
+rangos+correlation+complete,rangos,correlation,complete,2,191,7,"{WT,M1,M2} | {M3,M4,M5,M6}",1,1,1,2,2,2,2
+rangos+correlation+complete,rangos,correlation,complete,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1,1,1,2,3,3,2
+rangos+euclidean+average,rangos,euclidean,average,2,191,7,"{WT,M1,M2,M3,M6} | {M4,M5}",2,2,2,2,1,1,2
+rangos+euclidean+average,rangos,euclidean,average,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",2,2,2,3,1,1,3
+rangos+euclidean+complete,rangos,euclidean,complete,2,191,7,"{WT,M1,M2,M4,M5} | {M3,M6}",2,2,2,1,2,2,1
+rangos+euclidean+complete,rangos,euclidean,complete,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",2,2,2,1,3,3,1
+rangos+euclidean+ward,rangos,euclidean,ward,2,191,7,"{WT,M1,M2} | {M3,M4,M5,M6}",1,1,1,2,2,2,2
+rangos+euclidean+ward,rangos,euclidean,ward,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1,1,1,2,3,3,2
+zscore+correlation+average,zscore,correlation,average,2,191,7,"{WT,M1,M2,M3,M6} | {M4,M5}",2,2,2,2,1,1,2
+zscore+correlation+average,zscore,correlation,average,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",3,3,3,2,1,1,2
+zscore+correlation+complete,zscore,correlation,complete,2,191,7,"{WT,M1,M2} | {M3,M4,M5,M6}",1,1,1,2,2,2,2
+zscore+correlation+complete,zscore,correlation,complete,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",1,1,1,2,3,3,2
+zscore+euclidean+average,zscore,euclidean,average,2,191,7,"{WT,M1,M2,M3,M6} | {M4,M5}",1,1,1,1,2,2,1
+zscore+euclidean+average,zscore,euclidean,average,3,191,7,"{WT,M1,M2,M3,M6} | {M4} | {M5}",1,1,1,1,2,3,1
+zscore+euclidean+complete,zscore,euclidean,complete,2,191,7,"{WT,M1,M2,M3,M6} | {M4,M5}",2,2,2,2,1,1,2
+zscore+euclidean+complete,zscore,euclidean,complete,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",3,3,3,2,1,1,2
+zscore+euclidean+ward,zscore,euclidean,ward,2,191,7,"{WT,M1,M2,M3,M6} | {M4,M5}",2,2,2,2,1,1,2
+zscore+euclidean+ward,zscore,euclidean,ward,3,191,7,"{WT,M1,M2} | {M3,M6} | {M4,M5}",3,3,3,2,1,1,2

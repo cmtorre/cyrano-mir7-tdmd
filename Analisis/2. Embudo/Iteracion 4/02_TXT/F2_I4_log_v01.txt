@@ -1,0 +1,55 @@
+21:58:44 | INFO    | F2 Iteración 4 v01 | fecha 20260928 | pandas 2.3.3
+21:58:44 | INFO    | MÓDULO 2 | Carga y auditoría de compatibilidad
+21:58:44 | INFO    |   [archivo] F2_I2_DATASET_FINAL -> F2_I2_DATASET_FINAL_v01_20260926.csv
+21:58:44 | INFO    |   [archivo] F2_I3_DATA_DICTIONARY -> F2_I3_DATA_DICTIONARY_v01.csv
+21:58:44 | INFO    |   [archivo] F2_I2_MODULE_ASSIGNMENT_FINAL -> F2_I2_MODULE_ASSIGNMENT_FINAL_v01_20260926.csv
+21:58:44 | INFO    |   [archivo] F2_I2_CORR_SPEARMAN -> F2_I2_CORR_SPEARMAN_v01.csv
+21:58:44 | INFO    |   [archivo] F2_I3_MODULE_PROFILE -> F2_I3_MODULE_PROFILE_v01.csv
+21:58:44 | INFO    |   [archivo] F2_I3_SUBSPACES -> F2_I3_SUBSPACES_v01.csv
+21:58:44 | INFO    |   Diccionario: 232 entradas (superconjunto); se filtra a las 232 del dataset
+21:58:44 | INFO    |   Predictores: 232 | con módulo: 227 | módulos: 70
+21:58:44 | INFO    |   Matriz de Spearman: 227 x 227
+21:58:44 | INFO    |   Respuesta supervisada (solo para CYRMIR): Y_LOG2_MIR7REL
+21:58:44 | INFO    | MÓDULO 3 | Alias deterministas y elegibilidad mecanística
+21:58:44 | INFO    |   [alias] MIR_DPX_1D_LEN_P1 -> módulo M90_064 (representante CYR_DPX_1D_LEN_P1)
+21:58:44 | INFO    |   [alias] MIR_DPX_1D_PCT_A_P1 -> módulo M90_007 (representante CYR_DPX_1D_PCT_U_P1)
+21:58:44 | INFO    |   [alias] MIR_DPX_1D_LEN_P2 -> módulo M90_025 (representante CYR_DPX_1D_LEN_P2)
+21:58:44 | INFO    |   [alias] MIR_DPX_1D_PCT_A_P2 -> módulo M90_058 (representante CYR_DPX_1D_PCT_U_P2)
+21:58:44 | INFO    |   [alias] MIR_DPX_1D_PCT_U_P2 -> módulo M90_025 (representante CYR_DPX_1D_PCT_A_P2)
+21:58:44 | INFO    |   Elegibilidad MEC: BIOFISICO_GENERAL=193, COMPOSICION_NT_INDIVIDUAL=19, LONGITUD_DE_REGION=11, COMPOSICION_PURINA_PIRIMIDINA=8, SECUENCIA_O_LONGITUD_TOTAL=1
+21:58:44 | INFO    |   Elegibles: 212 | no elegibles: 20
+21:58:44 | INFO    | MÓDULO 4 | Asociación con la respuesta y nulo permutacional
+21:58:45 | INFO    |   [nulo marginal] N efectivo 7: 191 variables, 5040 permutaciones de sus respuestas disponibles
+21:58:46 | INFO    |   [nulo marginal] N efectivo 5: 40 variables, 120 permutaciones de sus respuestas disponibles
+21:58:46 | INFO    |   [nulo marginal] N efectivo 5: 1 variables, 120 permutaciones de sus respuestas disponibles
+21:58:46 | INFO    |   [control] la permutación identidad reproduce el rho observado en las 232 variables evaluadas, en todos los patrones de cobertura
+21:58:46 | INFO    |   Asociación: 32 variables con p exacto <= 0.05 de 232 | p mínimo = 0.004762
+21:58:46 | INFO    |   |rho| máximo del corpus: 0.975
+21:59:55 | INFO    |   [nulo intramódulo] esquema COMPLETA: 46 módulos, N_PERM en [5040]
+21:59:55 | INFO    |   [nulo intramódulo] esquema ESTRATIFICADA: 24 módulos, N_PERM en [240]
+21:59:55 | INFO    |   Módulos con p permutacional <= 0.05: 5 de 70 | p mínimo = 0.007143
+21:59:55 | INFO    | MÓDULO 5 | Topología intramódulo
+22:00:03 | INFO    |   Topología calculada para 227 variables en 70 módulos
+22:00:03 | INFO    |   B3 aplicable en 31 módulos (>= 3 miembros con cobertura común)
+22:00:03 | INFO    | MÓDULO 7 | Selección supervisada (CYRMIR_DATASET)
+22:00:08 | INFO    |   CYRMIR: 70 representantes (26 SINGLETON_FORCED)
+22:00:08 | INFO    |   Coincidencia A1-A2 (sin singletons): 40/44 | A1-A3: 41/44
+22:00:08 | INFO    |   Estabilidad LOO del representante: mediana=0.714, módulos con estabilidad 1.0: 12
+22:00:08 | INFO    |   Representantes con p exacto <= 0.05: 7 de 70
+22:00:08 | INFO    | MÓDULO 8 | Selección no supervisada (MEC_DATASET)
+22:00:08 | INFO    |   MEC: 66 representantes (24 SINGLETON_FORCED) | módulos ausentes: 4
+22:00:08 | INFO    |   Coincidencia B1-B2 (sin singletons): 36/42 | B1-B3: 23/42
+22:00:08 | INFO    |   [ausente] M90_007 (2 vars): Ningún descriptor elegible (V2) -> CYR_ISO_1D_PCT_U_P1;CYR_DPX_1D_PCT_U_P1
+22:00:08 | INFO    |   [ausente] M90_035 (1 vars): Ningún descriptor elegible (V2) -> CYR_ISO_1D_PCT_A_GLB
+22:00:08 | INFO    |   [ausente] M90_055 (1 vars): Ningún descriptor elegible (V2) -> CYR_ISO_1D_PCT_U_P2
+22:00:08 | INFO    |   [ausente] M90_058 (1 vars): Ningún descriptor elegible (V2) -> CYR_DPX_1D_PCT_U_P2
+22:00:08 | INFO    | MÓDULO 9 | Concordancia entre algoritmos
+22:00:08 | INFO    |   [CYRMIR] sin singletons: 44 módulos | 3/3=38 (86.4%) | 2/3=6
+22:00:08 | INFO    |   [CYRMIR] discrepancias: 7 | |rho| entre representantes: mediana=0.975, con |rho| >= 0.95: 4
+22:00:08 | INFO    |   [MEC] sin singletons: 42 módulos | 3/3=19 (45.2%) | 2/3=22
+22:00:08 | INFO    |   [MEC] discrepancias: 25 | |rho| entre representantes: mediana=0.986, con |rho| >= 0.95: 20
+22:00:08 | INFO    | MÓDULO 11 | Diccionarios finales
+22:00:08 | INFO    | MÓDULO 10 | Figuras
+22:00:17 | INFO    | MÓDULO 12 | Exportación
+22:00:17 | INFO    | RESUMEN | CYRMIR: 7 x 72 (70 representantes + 2 respuestas) | MEC: 7 x 68 (66 representantes + 2 respuestas) | compartidas: 42 | módulos MEC ausentes: 4
+22:00:17 | INFO    | La selección de CYRMIR usa la respuesta: toda asociación posterior con estas variables es exploratoria y está condicionada por selección.

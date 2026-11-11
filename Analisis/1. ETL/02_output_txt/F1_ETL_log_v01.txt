@@ -1,0 +1,85 @@
+11:59:48 | INFO    | F1 ETL v01 | fecha 20260925 | pandas 2.3.3
+11:59:48 | INFO    | INPUT_DIR  = C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-6\Nuevo_Flujo\3.FASE 1_ETL\00_matrices_crudas
+11:59:48 | INFO    |   [archivo] 1.OE1_Resultados_Cyranos y miR7-5-P.xlsx -> 1.OE1_Resultados_Cyranos y miR7-5-P.xlsx
+11:59:48 | INFO    |   [archivo] 2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx -> 2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx
+11:59:48 | INFO    |   [archivo] 2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx -> 2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx
+11:59:48 | INFO    |   [archivo] 2.3.OE2_Result-est-terc__Matriz_MREs.xlsx -> 2.3.OE2_Result-est-terc__Matriz_MREs.xlsx
+11:59:48 | INFO    |   [archivo] 3.1.OE3_Result_est_prim_MIR.xlsx -> 3.1.OE3_Result_est_prim_MIR.xlsx
+11:59:48 | INFO    |   [archivo] 3.2.OE3_Result_est_sec_MIR.xlsx -> 3.2.OE3_Result_est_sec_MIR.xlsx
+11:59:48 | INFO    |   [archivo] 3.3.OE3_Result_est_terc_MIR.xlsx -> 3.3.OE3_Result_est_terc_MIR.xlsx
+11:59:48 | INFO    |   [archivo] 4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx -> 4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx
+11:59:48 | INFO    |   [archivo] 4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx -> 4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx
+11:59:48 | INFO    |   [archivo] 5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx -> 5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx
+11:59:48 | INFO    | MÓDULO 2-3 | Extracción y renombrado
+11:59:50 | INFO    |   1.OE1_Resultados_Cyranos y miR7-5-P.xlsx/A_FINAL_MREs: N=7 P=10
+11:59:50 | INFO    |   2.1.OE2_Result_est_prim_MATRIZ_MREs_CYR.xlsx/A_FINAL_MREs: N=7 P=39
+11:59:50 | INFO    |   2.2.OE2_Result_est-sec_MATRIZ_MREs.xlsx/A_FINAL_MREs: N=7 P=24
+11:59:50 | INFO    |   2.3.OE2_Result-est-terc__Matriz_MREs.xlsx/A_FINAL_MREs: N=7 P=61
+11:59:50 | INFO    |   [región] 2.3.OE2_Result-est-terc__Matriz_MREs.xlsx/A_FINAL_MREs :: SUGAR_PUCKER_C3'-EXO_PCT -> sufijo de región ausente; asignado por bloque (T1)
+11:59:50 | INFO    |   3.1.OE3_Result_est_prim_MIR.xlsx/A_FINAL_MIR: N=1 P=35
+11:59:50 | INFO    |   3.1.OE3_Result_est_prim_MIR.xlsx/A_FINAL_MIR: N=1 replicado a 7 filas como estado de referencia
+11:59:50 | INFO    |   3.2.OE3_Result_est_sec_MIR.xlsx/A_FINAL_MIR: N=1 P=22
+11:59:50 | INFO    |   3.2.OE3_Result_est_sec_MIR.xlsx/A_FINAL_MIR: N=1 replicado a 7 filas como estado de referencia
+11:59:50 | INFO    |   [región] 3.2.OE3_Result_est_sec_MIR.xlsx/A_FINAL_MIR :: PROB_PAIR_P3 -> sufijo P3 corregido a P2 según bloque
+11:59:50 | INFO    |   [región] 3.2.OE3_Result_est_sec_MIR.xlsx/A_FINAL_MIR :: ACCES_POS_P3 -> sufijo P3 corregido a P2 según bloque
+11:59:50 | INFO    |   [región] 3.2.OE3_Result_est_sec_MIR.xlsx/A_FINAL_MIR :: ENT_POS_P3 -> sufijo P3 corregido a P2 según bloque
+11:59:50 | INFO    |   3.3.OE3_Result_est_terc_MIR.xlsx/A_FINAL_MIR: N=1 P=61
+11:59:50 | INFO    |   3.3.OE3_Result_est_terc_MIR.xlsx/A_FINAL_MIR: N=1 replicado a 7 filas como estado de referencia
+11:59:50 | INFO    |   [región] 3.3.OE3_Result_est_terc_MIR.xlsx/A_FINAL_MIR :: SUGAR_PUCKER_C3'-EXO_PCT -> sufijo de región ausente; asignado por bloque (T1)
+11:59:50 | INFO    |   4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx/A_FINAL_MREs: N=7 P=51
+11:59:50 | INFO    |   4.1.OE4_Result_est_prim_MATRIZ_MREs_MIR.xlsx/A_FINAL_MIRs: N=7 P=49
+11:59:50 | INFO    |   4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx/A_FINAL_MREs: N=7 P=86
+11:59:50 | INFO    |   [región] 4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx/A_FINAL_MREs :: SUGAR_PUCKER_C3'-EXO_PCT -> sufijo de región ausente; asignado por bloque (T1)
+11:59:51 | INFO    |   4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx/A_FINAL_MIRs: N=7 P=86
+11:59:51 | INFO    |   [región] 4.2.OE4_Result_est_sec_terc_MATRIZ_MREs_MIR.xlsx/A_FINAL_MIRs :: SUGAR_PUCKER_C3'-EXO_PCT -> sufijo de región ausente; asignado por bloque (T1)
+11:59:51 | INFO    |   5.1.OE5_Result_termodinamica_est_sec_terc_Matriz_Duplex.xlsx/A_FINAL_DUPLEX: N=7 P=45
+11:59:52 | INFO    |   Matriz unida: 7 x 569
+11:59:52 | INFO    | MÓDULO 4 | Casteo de tipos
+11:59:53 | INFO    | MÓDULO 5 | Tipificación de nulos e imputación dual
+11:59:53 | INFO    |   Celdas por código: OBS=3395, STRUCT_ABS=563, UNDEF=22, NOT_APPLIC=3, TECH_NA=0
+11:59:53 | INFO    |   [UNDEF] CYR_DPX_3D_CHI_ANGLE_SD_O en ['M6']
+11:59:53 | INFO    |   [UNDEF] CYR_DPX_3D_END_DIST_O en ['M6']
+11:59:53 | INFO    |   [UNDEF] CYR_DPX_3D_PSEUDO_P_SUGAR_SD_O en ['M6']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_BP_CAN_B en ['M4', 'M5']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_BP_NC_B en ['M4', 'M5']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_BP_TOTAL_B en ['M4', 'M5']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_END_DIST_INTER_B en ['M4', 'M5']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_END_DIST_INTER_O en ['M3', 'M6']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_END_DIST_INTER_T1 en ['WT', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6']
+11:59:53 | INFO    |   [UNDEF] DPX_3D_STACK_B en ['M4', 'M5']
+11:59:56 | INFO    |   Imputación con 0 (conteos en regiones ausentes): 38 columnas, 122 celdas
+11:59:56 | INFO    | MÓDULO 6 | Variables derivadas
+11:59:56 | INFO    |   Variables derivadas creadas: 17
+11:59:57 | INFO    | MÓDULO 7 | Identidades, constantes y duplicados
+11:59:57 | INFO    |   [identidad] ACCES_COST = UNF_A + UNF_B: 1/1 se cumplen (máx |residuo| = 0.00e+00)
+11:59:57 | INFO    |   [identidad] ACCES_POS = 100 - PROB_PAIR: 10/10 se cumplen (máx |residuo| = 1.42e-14)
+11:59:57 | INFO    |   [identidad] BP_TOTAL = BP_CAN + BP_NC: 18/18 se cumplen (máx |residuo| = 0.00e+00)
+11:59:57 | INFO    |   [identidad] NET_DG = HYB_DG + ACCES_COST: 1/1 se cumplen (máx |residuo| = 3.55e-15)
+11:59:57 | INFO    |   [identidad] PCT_C = 100 - (A+U+G): 20/20 se cumplen (máx |residuo| = 2.84e-14)
+11:59:57 | INFO    |   [identidad] PCT_PIR = 100 - PCT_PUR: 20/20 se cumplen (máx |residuo| = 1.42e-14)
+11:59:57 | INFO    |   [identidad] SASA_BASES_PCT = 100 - SASA_BB_PCT: 18/18 se cumplen (máx |residuo| = 2.01e-05)
+11:59:57 | INFO    |   [identidad] TDMD_SCORE = 1 - MIR7_REL: 1/1 se cumplen (máx |residuo| = 0.00e+00)
+11:59:57 | INFO    |   Constantes: 233 | duplicados exactos: 52
+11:59:57 | INFO    | MÓDULO 9 | Figuras de respuesta y deltas
+11:59:57 | INFO    |   [respuesta] empate en ['M2', 'M3', 'M4'] con valor 39
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_RG_GLB: min=-6 max=2.18 signo(+/-/0)=3/4/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_END_DIST_GLB: min=-23.9 max=25.8 signo(+/-/0)=4/3/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_CHI_ANGLE_MEAN_GLB: min=-5.64 max=32.6 signo(+/-/0)=6/1/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_CHI_ANGLE_SD_GLB: min=-63.7 max=60.5 signo(+/-/0)=2/5/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_PSEUDO_P_SUGAR_MEAN_GLB: min=-33.9 max=19.6 signo(+/-/0)=6/1/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_PSEUDO_P_SUGAR_SD_GLB: min=-73 max=41.2 signo(+/-/0)=2/5/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_SASA_TOTAL_GLB: min=-1.54e+03 max=-932 signo(+/-/0)=0/7/0
+11:59:58 | INFO    |   [delta] DLT_CYR_3D_STACK_GLB: min=-1 max=7 signo(+/-/0)=4/3/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_RG_GLB: min=-2.04 max=2.02 signo(+/-/0)=3/4/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_END_DIST_GLB: min=0.771 max=25.4 signo(+/-/0)=7/0/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_CHI_ANGLE_MEAN_GLB: min=16.4 max=24.7 signo(+/-/0)=7/0/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_CHI_ANGLE_SD_GLB: min=-63.7 max=-45.6 signo(+/-/0)=0/7/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_PSEUDO_P_SUGAR_MEAN_GLB: min=0.458 max=25.4 signo(+/-/0)=7/0/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_PSEUDO_P_SUGAR_SD_GLB: min=-4.09 max=51.2 signo(+/-/0)=3/4/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_SASA_TOTAL_GLB: min=-1.53e+03 max=-981 signo(+/-/0)=0/7/0
+11:59:58 | INFO    |   [delta] DLT_MIR_3D_STACK_GLB: min=-2 max=3 signo(+/-/0)=5/1/1
+12:00:00 | INFO    | MÓDULO 8 | Diccionario de datos
+12:00:01 | INFO    | MÓDULO 10 | Exportación
+12:00:01 | INFO    | RAW_DATASET final: N=7 x P=597 | roles: {'PREDICTOR': 542, 'META': 41, 'FLAG': 11, 'RESPONSE': 2, 'META_REDUNDANT': 1}
+12:00:01 | INFO    | Predictores no constantes y no redundantes (candidatos a Iteración 1): 246
+12:00:01 | INFO    | Artefactos escritos en C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-6\Nuevo_Flujo\3.FASE 1_ETL\02_output_txt y C:\Users\cmart\OneDrive\Documentos OneDrive\1. circRNA_TESIS\Tesis\7.Metodo\OE-6\Nuevo_Flujo\3.FASE 1_ETL\01_outputs_figuras

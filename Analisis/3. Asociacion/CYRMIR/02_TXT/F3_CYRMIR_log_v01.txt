@@ -1,0 +1,57 @@
+14:39:20 | INFO    | Fase III, rama CYRMIR | v01 | fecha 20260929 | pandas 2.3.3
+14:39:20 | INFO    |   Con N = 7 el análisis es exploratorio: no es modelo predictivo ni prueba causal
+14:39:20 | INFO    | MÓDULO 2 | Carga y auditoría
+14:39:20 | INFO    |   [archivo] F2_I4_CYRMIR_DATASET -> F2_I4_CYRMIR_DATASET_v01_20260928.csv
+14:39:20 | INFO    |   [archivo] F2_I4_CYRMIR_DICTIONARY -> F2_I4_CYRMIR_DICTIONARY_v01.csv
+14:39:20 | INFO    |   Representantes: 70 | respuestas: ['Y_MIR7_REL', 'Y_LOG2_MIR7REL']
+14:39:20 | INFO    |   Respuesta primaria declarada: Y_LOG2_MIR7REL
+14:39:20 | INFO    |   Cobertura: N efectivo 7 en 60, N efectivo 5 en 10
+14:39:20 | INFO    |   Marca heredada SINGLETON_FORCED: 26 representantes
+14:39:20 | INFO    |   Marca heredada WT_SIGNATURE: 1 representantes
+14:39:20 | INFO    |   Marca heredada CIRC_RISK: 0 representantes
+14:39:20 | INFO    |   [control] Spearman invariante a la transformación logarítmica en 10 variables verificadas
+14:39:20 | INFO    | MÓDULO 3 | Estadística descriptiva (III-1)
+14:39:21 | INFO    |   Descriptiva: 70 variables | N efectivo 7: 60 | N efectivo 5: 10
+14:39:21 | INFO    |   Tipos físicos: ANGULAR=25, PORCENTAJE=14, CONTEO=13, DISTANCIA=9, AREA=5, ADIMENSIONAL=2, BINARIA=1, ENERGIA=1
+14:39:21 | INFO    |   Diferencia con WT omitida en 1 variables binarias
+14:39:21 | INFO    | MÓDULO 4 | Redundancia residual
+14:39:21 | INFO    |   Redundancia residual: 2395 pares | |rho|>=0.95: 3.0 | |rho|>=0.9: 19.0 | |rho|>=0.85: 77.0 | |rho|>=0.7: 338.0
+14:39:21 | INFO    | MÓDULO 5-6 | Asociación primaria y de sensibilidad (III-2)
+14:39:21 | INFO    |   Asociación: |rho| máximo=0.975, mediana=0.426
+14:39:21 | INFO    |   Dirección coincidente con Kendall en 69/70 | con Pearson (diagnóstico) en 57/70
+14:39:21 | INFO    | MÓDULO 8A | Candidatos originales y orden de desempate
+14:39:21 | INFO    |   [archivo] F2_I2_DATASET_FINAL -> F2_I2_DATASET_FINAL_v01_20260926.csv
+14:39:21 | INFO    |   [archivo] F2_I3_DATA_DICTIONARY -> F2_I3_DATA_DICTIONARY_v01.csv
+14:39:21 | INFO    |   [archivo] F2_I4_TOPOLOGY -> F2_I4_TOPOLOGY_v01.csv
+14:39:21 | INFO    |   Distancia media intramódulo: F2_I4_TOPOLOGY
+14:39:21 | INFO    |   Candidatos originales: 232 variables, 70 módulos
+14:39:21 | INFO    |   Tamaño de módulo: mediana=2, máximo=18
+14:39:21 | INFO    | MÓDULO 8B | Inferencia selectiva (III-3 B)
+14:41:56 | INFO    |   [control] bajo la identidad, el máximo del módulo reproduce el coeficiente del representante y el desempate reproduce su identidad en los 70 módulos
+14:41:56 | INFO    |   Esquema COMPLETA: 46 módulos, N_PERM en [5040]
+14:41:56 | INFO    |   Esquema ESTRATIFICADA: 24 módulos, N_PERM en [240]
+14:41:56 | INFO    |   Inferencia selectiva: 5 representantes con p <= 0.05 | p mínimo = 0.007143
+14:41:56 | INFO    |   Inferencia marginal (comparación): 7 con p <= 0.05
+14:41:56 | INFO    |   El p selectivo es mayor o igual al marginal en 70/70 módulos
+14:41:56 | INFO    |   [archivo] F2_I4_MODULE_NULL -> F2_I4_MODULE_NULL_v01.csv
+14:41:56 | INFO    |   [control cruzado] el nulo selectivo reproduce F2_I4_MODULE_NULL en los 70 módulos, con diferencia máxima de p = 0.00e+00
+14:41:56 | INFO    | MÓDULO 7 | Multiplicidad
+14:41:56 | INFO    |   Nivel de referencia 0.05: p <= 0.05 en 5 variables, q <= 0.05 en 0
+14:41:56 | INFO    |   Nivel de referencia 0.1: p <= 0.1 en 8 variables, q <= 0.1 en 0
+14:41:56 | INFO    |   Nivel de referencia 0.2: p <= 0.2 en 16 variables, q <= 0.2 en 0
+14:41:56 | INFO    |   q mínimo observado con estos valores p: 0.5000. Depende del conjunto completo de valores p y de su orden, no solo del mínimo, y se reporta como diagnóstico de multiplicidad, no como filtro
+14:41:56 | INFO    | MÓDULO 9 | Dejar una fuera (III-4 A)
+14:41:58 | INFO    |   Dejar una fuera: estabilidad de signo mediana=1.000 | signo conservado en las 7 réplicas: 45/68 evaluables | no evaluables por coeficiente completo cero o no definido: 2
+14:41:58 | INFO    |   Cambio máximo respecto al coeficiente completo: mediana=0.317, máximo=0.838
+14:41:58 | INFO    | MÓDULO 10 | Sensibilidad a WT (III-4 B)
+14:41:58 | INFO    |   Sensibilidad a WT: |delta| mediano=0.139, máximo=0.695
+14:41:58 | INFO    |   Signo conservado sin WT en 56/67 evaluables | cambia en 11 | no evaluables: 3
+14:41:58 | INFO    |     no evaluables por 'Coeficiente completo exactamente cero: no tiene signo': 2 (CYR_DPX_3D_STACK_O, DPX_3D_BP_CAN_B)
+14:41:58 | INFO    |     no evaluables por 'Sin variación entre M1 y M6: el coeficiente sin WT no existe': 1 (CYR_DPX_1D_PCT_G_P1)
+14:41:58 | INFO    | MÓDULO 11 | Tabla maestra
+14:41:58 | INFO    |   Tabla maestra: 70 filas x 75 columnas
+14:41:58 | INFO    | MÓDULO 12 | Figuras
+14:42:12 | INFO    | MÓDULO 13 | Exportación
+14:42:12 | INFO    | RESUMEN | CYRMIR: 70 representantes | |rho| máximo=0.975 | p <= 0.05: 5 | q mínimo=0.500 | signo conservado en las 7 réplicas: 45
+14:42:12 | INFO    |   p selectivo frente a marginal: 30 representantes con p mayor bajo la inferencia selectiva
+14:42:12 | INFO    | La respuesta participó en la selección de estos representantes: toda asociación aquí estimada es exploratoria y está condicionada por selección.

@@ -1,0 +1,45 @@
+14:34:53 | INFO    | Fase III, rama MEC | v01 | fecha 20260929 | pandas 2.3.3
+14:34:53 | INFO    |   Con N = 7 el análisis es exploratorio: no es modelo predictivo ni prueba causal
+14:34:53 | INFO    | MÓDULO 2 | Carga y auditoría
+14:34:53 | INFO    |   [archivo] F2_I4_MEC_DATASET -> F2_I4_MEC_DATASET_v01_20260928.csv
+14:34:53 | INFO    |   [archivo] F2_I4_MEC_DICTIONARY -> F2_I4_MEC_DICTIONARY_v01.csv
+14:34:53 | INFO    |   Representantes: 66 | respuestas: ['Y_MIR7_REL', 'Y_LOG2_MIR7REL']
+14:34:53 | INFO    |   Respuesta primaria declarada: Y_LOG2_MIR7REL
+14:34:53 | INFO    |   Cobertura: N efectivo 7 en 58, N efectivo 5 en 8
+14:34:53 | INFO    |   Marca heredada SINGLETON_FORCED: 24 representantes
+14:34:53 | INFO    |   Marca heredada WT_SIGNATURE: 1 representantes
+14:34:53 | INFO    |   Marca heredada CIRC_RISK: 0 representantes
+14:34:53 | INFO    |   [control] Spearman invariante a la transformación logarítmica en 10 variables verificadas
+14:34:53 | INFO    | MÓDULO 3 | Estadística descriptiva (III-1)
+14:34:53 | INFO    |   Descriptiva: 66 variables | N efectivo 7: 58 | N efectivo 5: 8
+14:34:53 | INFO    |   Tipos físicos: ANGULAR=26, CONTEO=12, DISTANCIA=9, PORCENTAJE=9, AREA=5, ADIMENSIONAL=3, BINARIA=1, ENERGIA=1
+14:34:53 | INFO    |   Diferencia con WT omitida en 1 variables binarias
+14:34:53 | INFO    | MÓDULO 4 | Redundancia residual
+14:34:53 | INFO    |   Redundancia residual: 2129 pares | |rho|>=0.95: 3.0 | |rho|>=0.9: 21.0 | |rho|>=0.85: 74.0 | |rho|>=0.7: 248.0
+14:34:53 | INFO    | MÓDULO 5-6 | Asociación primaria y de sensibilidad (III-2)
+14:34:53 | INFO    |   Asociación: |rho| máximo=0.975, mediana=0.370
+14:34:53 | INFO    |   Dirección coincidente con Kendall en 64/66 | con Pearson (diagnóstico) en 53/66
+14:34:53 | INFO    | MÓDULO 8 | Inferencia permutacional (III-3)
+14:34:55 | INFO    |   [nulo] N efectivo 7: 58 variables, 5040 permutaciones
+14:34:55 | INFO    |   [nulo] N efectivo 5: 8 variables, 120 permutaciones
+14:34:55 | INFO    |   [control] la identidad reproduce el coeficiente observado en 66 variables
+14:34:55 | INFO    |   Inferencia: 4 variables con p exacto <= 0.05 de 66 | p mínimo = 0.007143
+14:34:55 | INFO    | MÓDULO 7 | Multiplicidad
+14:34:55 | INFO    |   Nivel de referencia 0.05: p <= 0.05 en 4 variables, q <= 0.05 en 0
+14:34:55 | INFO    |   Nivel de referencia 0.1: p <= 0.1 en 5 variables, q <= 0.1 en 0
+14:34:55 | INFO    |   Nivel de referencia 0.2: p <= 0.2 en 17 variables, q <= 0.2 en 0
+14:34:55 | INFO    |   q mínimo observado con estos valores p: 0.4714. Depende del conjunto completo de valores p y de su orden, no solo del mínimo, y se reporta como diagnóstico de multiplicidad, no como filtro
+14:34:55 | INFO    | MÓDULO 9 | Dejar una fuera (III-4 A)
+14:34:56 | INFO    |   Dejar una fuera: estabilidad de signo mediana=1.000 | signo conservado en las 7 réplicas: 38/63 evaluables | no evaluables por coeficiente completo cero o no definido: 3
+14:34:56 | INFO    |   Cambio máximo respecto al coeficiente completo: mediana=0.313, máximo=0.838
+14:34:56 | INFO    | MÓDULO 10 | Sensibilidad a WT (III-4 B)
+14:34:57 | INFO    |   Sensibilidad a WT: |delta| mediano=0.145, máximo=0.838
+14:34:57 | INFO    |   Signo conservado sin WT en 48/62 evaluables | cambia en 14 | no evaluables: 4
+14:34:57 | INFO    |     no evaluables por 'Coeficiente completo exactamente cero: no tiene signo': 3 (CYR_ISO_3D_CHI_CLASS_ANTI_PCT_GLB, CYR_DPX_3D_STACK_O, DPX_3D_BP_CAN_B)
+14:34:57 | INFO    |     no evaluables por 'Sin variación entre M1 y M6: el coeficiente sin WT no existe': 1 (CYR_DPX_3D_CHI_CLASS_ANTI_PCT_GLB)
+14:34:57 | INFO    | MÓDULO 11 | Tabla maestra
+14:34:57 | INFO    |   Tabla maestra: 66 filas x 72 columnas
+14:34:57 | INFO    | MÓDULO 12 | Figuras
+14:35:09 | INFO    | MÓDULO 13 | Exportación
+14:35:09 | INFO    | RESUMEN | MEC: 66 representantes | |rho| máximo=0.975 | p <= 0.05: 4 | q mínimo=0.471 | signo conservado en las 7 réplicas: 38
+14:35:09 | INFO    | Los representantes de esta rama se eligieron sin usar la respuesta: la inferencia con descriptor fijo es la que corresponde a su construcción.

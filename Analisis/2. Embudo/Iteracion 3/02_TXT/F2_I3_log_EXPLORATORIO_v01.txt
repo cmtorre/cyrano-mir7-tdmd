@@ -1,0 +1,85 @@
+15:26:36 | INFO    | F2 Iteración 3 v01 | fecha 20260928 | pandas 2.3.3 | semilla 20260926
+15:26:36 | INFO    |   Configuración de referencia (V1): rangos+correlation+average
+15:26:36 | INFO    | MÓDULO 2 | Carga y validación
+15:26:36 | INFO    |   [archivo] F2_I2_DATASET_FINAL -> F2_I2_DATASET_FINAL_v01_20260926.csv
+15:26:36 | INFO    |   [archivo] F2_I2_DATA_DICTIONARY -> F2_I2_DATA_DICTIONARY_v01.csv
+15:26:36 | INFO    |   [archivo] F2_I2_MODULE_ASSIGNMENT_FINAL -> F2_I2_MODULE_ASSIGNMENT_FINAL_v01_20260926.csv
+15:26:36 | INFO    |   Predictores: 232 | con módulo asignado: 227 | sin módulo (alias colapsados): 5
+15:26:36 | INFO    |   Módulos distintos en el corte 0.90: 70
+15:26:36 | INFO    |   Respuestas blindadas: ['Y_MIR7_REL', 'Y_LOG2_MIR7REL'] (no intervienen en ningún análisis no supervisado)
+15:26:36 | INFO    | MÓDULO 3 | Cobertura y subespacios
+15:26:36 | INFO    |   [cobertura] patrón 0000000: 191 variables (completas)
+15:26:36 | INFO    |   [cobertura] patrón 0001001: 40 variables (ausentes en M3, M6)
+15:26:36 | INFO    |   [cobertura] patrón 0000110: 1 variables (ausentes en M4, M5)
+15:26:36 | INFO    |   [REGION] S_B COMPLETAS: 14 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_B AMPLIADO: 30 variables, N efectivo=3 -> solo descripción
+15:26:36 | INFO    |   [REGION] S_GLB COMPLETAS: 74 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_GLB AMPLIADO: 74 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_O COMPLETAS: 10 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_O AMPLIADO: 10 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_P1 COMPLETAS: 25 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_P1 AMPLIADO: 50 variables, N efectivo=5 -> apto
+15:26:36 | INFO    |   [REGION] S_P2 COMPLETAS: 49 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_P2 AMPLIADO: 49 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_T1 COMPLETAS: 19 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [REGION] S_T1 AMPLIADO: 19 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_CYR_DPX COMPLETAS: 38 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_CYR_DPX AMPLIADO: 50 variables, N efectivo=5 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_CYR_ISO COMPLETAS: 65 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_CYR_ISO AMPLIADO: 65 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_DLT_CYR COMPLETAS: 8 variables, N efectivo=7 -> solo descripción
+15:26:36 | INFO    |   [CONTEXTO] S_DLT_CYR AMPLIADO: 8 variables, N efectivo=7 -> solo descripción
+15:26:36 | INFO    |   [CONTEXTO] S_DLT_MIR COMPLETAS: 8 variables, N efectivo=7 -> solo descripción
+15:26:36 | INFO    |   [CONTEXTO] S_DLT_MIR AMPLIADO: 8 variables, N efectivo=7 -> solo descripción
+15:26:36 | INFO    |   [CONTEXTO] S_DPX COMPLETAS: 28 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_DPX AMPLIADO: 32 variables, N efectivo=3 -> solo descripción
+15:26:36 | INFO    |   [CONTEXTO] S_MIR_DPX COMPLETAS: 44 variables, N efectivo=7 -> apto
+15:26:36 | INFO    |   [CONTEXTO] S_MIR_DPX AMPLIADO: 69 variables, N efectivo=5 -> apto
+15:26:36 | INFO    | MÓDULO 4 | Perfil de los módulos de covariación
+15:26:37 | INFO    |   Módulos perfilados: 70 | completos: 46 | mixtos: 24
+15:26:37 | INFO    |   Cohesión (rho mediano interno) en módulos de 2 o más: mín=0.906, mediana=0.972
+15:26:37 | INFO    |   Integración: módulos de un solo bloque=33, de 4 o más bloques=8
+15:26:37 | INFO    |   Medoide con margen menor a 0.01 (candidatos en competencia): 23 módulos
+15:26:37 | INFO    | MÓDULO 5 | Tipologías de variantes (espacio global, variables completas)
+15:26:37 | INFO    |   Espacio de agrupamiento global: N=7 x 191 variables completas
+15:26:37 | INFO    |   [k=2] particiones distintas: 3 en 10 configuraciones
+15:26:37 | INFO    |     5/10 configuraciones -> {WT,M1,M2,M3,M6} | {M4,M5}
+15:26:37 | INFO    |     4/10 configuraciones -> {WT,M1,M2} | {M3,M4,M5,M6}
+15:26:37 | INFO    |     1/10 configuraciones -> {WT,M1,M2,M4,M5} | {M3,M6}
+15:26:37 | INFO    |   [k=3] particiones distintas: 2 en 10 configuraciones
+15:26:37 | INFO    |     9/10 configuraciones -> {WT,M1,M2} | {M3,M6} | {M4,M5}
+15:26:37 | INFO    |     1/10 configuraciones -> {WT,M1,M2,M3,M6} | {M4} | {M5}
+15:26:37 | INFO    | MÓDULO 6 | Concordancia y estabilidad
+15:26:39 | INFO    |   [k=2] ARI entre configuraciones: mediana=0.054, pares idénticos=16 de 45
+15:26:39 | INFO    |   [k=3] ARI entre configuraciones: mediana=1.000, pares idénticos=36 de 45
+15:26:42 | INFO    |   Remuestreo de columnas: 1000/1000 réplicas válidas (k=3)
+15:26:42 | INFO    |     WT-M1: coagrupan en 100.0% de las réplicas
+15:26:42 | INFO    |     M4-M5: coagrupan en 100.0% de las réplicas
+15:26:42 | INFO    |     M3-M6: coagrupan en 99.8% de las réplicas
+15:26:42 | INFO    |     WT-M2: coagrupan en 99.5% de las réplicas
+15:26:42 | INFO    | MÓDULO 7 | Contraste descriptivo con la arquitectura
+15:26:42 | INFO    |   [k=2] ARI frente a la arquitectura: máx=0.588, mediana=0.442, configuraciones con ARI=1: 0
+15:26:42 | INFO    |   [k=3] ARI frente a la arquitectura: máx=1.000, mediana=1.000, configuraciones con ARI=1: 9
+15:26:42 | INFO    | MÓDULO 8 | Tipologías por subespacio
+15:26:43 | INFO    |   [S_B COMPLETAS] N=7, 14 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_GLB COMPLETAS] N=7, 74 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_GLB AMPLIADO] N=7, 74 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_O COMPLETAS] N=7, 10 vars, k=3: {WT,M1,M2,M4,M5} | {M3} | {M6} (ARI arquitectura=0.316)
+15:26:43 | INFO    |   [S_O AMPLIADO] N=7, 10 vars, k=3: {WT,M1,M2,M4,M5} | {M3} | {M6} (ARI arquitectura=0.316)
+15:26:43 | INFO    |   [S_P1 COMPLETAS] N=7, 25 vars, k=3: {WT,M1,M5} | {M2,M3,M6} | {M4} (ARI arquitectura=0.14)
+15:26:43 | INFO    |   [S_P1 AMPLIADO] N=5, 50 vars, k=3: {WT,M1} | {M2,M4} | {M5} (ARI arquitectura=0.091)
+15:26:43 | INFO    |   [S_P2 COMPLETAS] N=7, 49 vars, k=3: {WT,M1,M2,M3} | {M4,M5} | {M6} (ARI arquitectura=0.538)
+15:26:43 | INFO    |   [S_P2 AMPLIADO] N=7, 49 vars, k=3: {WT,M1,M2,M3} | {M4,M5} | {M6} (ARI arquitectura=0.538)
+15:26:43 | INFO    |   [S_T1 COMPLETAS] N=7, 19 vars, k=3: {WT,M2} | {M1,M4} | {M3,M5,M6} (ARI arquitectura=0.213)
+15:26:43 | INFO    |   [S_T1 AMPLIADO] N=7, 19 vars, k=3: {WT,M2} | {M1,M4} | {M3,M5,M6} (ARI arquitectura=0.213)
+15:26:43 | INFO    |   [S_CYR_DPX COMPLETAS] N=7, 38 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_CYR_DPX AMPLIADO] N=5, 50 vars, k=3: {WT} | {M1,M2} | {M4,M5} (ARI arquitectura=0.545)
+15:26:43 | INFO    |   [S_CYR_ISO COMPLETAS] N=7, 65 vars, k=3: {WT,M2,M3} | {M1,M4} | {M5,M6} (ARI arquitectura=-0.05)
+15:26:43 | INFO    |   [S_CYR_ISO AMPLIADO] N=7, 65 vars, k=3: {WT,M2,M3} | {M1,M4} | {M5,M6} (ARI arquitectura=-0.05)
+15:26:43 | INFO    |   [S_DPX COMPLETAS] N=7, 28 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_MIR_DPX COMPLETAS] N=7, 44 vars, k=3: {WT,M1,M2} | {M3,M6} | {M4,M5} (ARI arquitectura=1.0)
+15:26:43 | INFO    |   [S_MIR_DPX AMPLIADO] N=5, 69 vars, k=3: {WT} | {M1,M2} | {M4,M5} (ARI arquitectura=0.545)
+15:26:43 | INFO    | MÓDULO 10 | Diccionario
+15:26:43 | INFO    | MÓDULO 9 | Figuras
+15:26:51 | INFO    | MÓDULO 11 | Exportación
+15:26:51 | INFO    | RESUMEN | P=232 sin cambios (la Iteración 3 no selecciona ni reduce) | subespacios aptos=18 | módulos perfilados=70 (mixtos=24) | partición modal k=3 en 9/10 configuraciones: {WT,M1,M2} | {M3,M6} | {M4,M5} | ARI máx frente a arquitectura=1.000

@@ -1,0 +1,66 @@
+16:05:37 | INFO    | F2 Iteración 2 v01 | modo CORTE0.90 | fecha 20260926 | pandas 2.3.3 | semilla 20260925
+16:05:37 | INFO    | MÓDULO 2 | Carga y validación
+16:05:37 | INFO    |   Grupos de alias heredados: 12 (34 columnas)
+16:05:37 | INFO    |   Predictores: 232 | completos: 191 | con nulos estructurales: 41
+16:05:37 | INFO    |   Respuestas blindadas: ['Y_MIR7_REL', 'Y_LOG2_MIR7REL']
+16:05:37 | INFO    | MÓDULO 3 | Tamizado por varianza con criterio estructural
+16:05:37 | INFO    |   n_minoría: 1=19, 2=33, 3=22, 4=40, 5=16, 6=102
+16:05:37 | INFO    |   [MUTANTE_UNICO] 15 variables
+16:05:37 | INFO    |   [PAR_NO_ESTRUCTURAL] 6 variables
+16:05:37 | INFO    |   [STRUCT_BULGE_ASIMETRICO] 12 variables
+16:05:37 | INFO    |   [STRUCT_OVERHANG] 15 variables
+16:05:37 | INFO    |   [WT_SIGNATURE] 4 variables
+16:05:37 | INFO    |   [WT_SIGNATURE] CYR_DPX_1D_PCT_G_P1
+16:05:37 | INFO    |   [WT_SIGNATURE] CYR_DPX_1D_PCT_PUR_P1
+16:05:37 | INFO    |   [WT_SIGNATURE] MIR_DPX_1D_PCT_PUR_P1
+16:05:37 | INFO    |   [WT_SIGNATURE] CYR_DPX_3D_CHI_CLASS_ANTI_PCT_GLB
+16:05:37 | INFO    |   Variables eliminadas por varianza: 0 (V1 y V2: se conservan todas)
+16:05:37 | INFO    | MÓDULO 4 | Clasificación de alias (V6)
+16:05:37 | INFO    |   Alias deterministas (complementariedad WC) colapsados para el agrupamiento: 5
+16:05:37 | INFO    |     MIR_DPX_1D_PCT_U_P2 == CYR_DPX_1D_PCT_A_P2
+16:05:37 | INFO    |     MIR_DPX_1D_LEN_P1 == CYR_DPX_1D_LEN_P1
+16:05:37 | INFO    |     MIR_DPX_1D_PCT_A_P1 == CYR_DPX_1D_PCT_U_P1
+16:05:37 | INFO    |     MIR_DPX_1D_LEN_P2 == CYR_DPX_1D_LEN_P2
+16:05:37 | INFO    |     MIR_DPX_1D_PCT_A_P2 == CYR_DPX_1D_PCT_U_P2
+16:05:37 | INFO    |   Coincidencias numéricas conservadas como variables distintas: 17
+16:05:37 | INFO    | MÓDULO 5 | Correlaciones y distribución nula exacta
+16:05:37 | INFO    |   Pares evaluados: 24932 (de 25651; 719 sin soporte suficiente)
+16:05:37 | INFO    |   [|rho| >= 0.95] observados=563 esperados por azar=69.3 razón=8.13 | Pearson=996
+16:05:37 | INFO    |   [|rho| >= 0.9] observados=946 esperados por azar=168.2 razón=5.62 | Pearson=1698
+16:05:37 | INFO    |   [|rho| >= 0.85] observados=1706 esperados por azar=593.6 razón=2.87 | Pearson=2405
+16:05:37 | INFO    | MÓDULO 6 | Módulos de colinealidad
+16:05:37 | INFO    |   [CONSERVADOR | corte 0.95] módulos=94 singletons=46 mayor=15 con>=5: 12
+16:05:38 | INFO    |   [INTERMEDIO | corte 0.9] módulos=70 singletons=26 mayor=18 con>=5: 16
+16:05:38 | INFO    |   [PERMISIVO | corte 0.85] módulos=53 singletons=13 mayor=23 con>=5: 20
+16:05:38 | INFO    | MÓDULO 7 | Espacio latente (PCA)
+16:05:49 | INFO    |   PC1: 33.2% (acum 33.2%) | nulo p95=22.3% | p=0.0002 -> significativo
+16:05:49 | INFO    |   PC2: 28.9% (acum 62.1%) | nulo p95=19.9% | p=0.0002 -> significativo
+16:05:49 | INFO    |   PC3: 16.9% (acum 79.0%) | nulo p95=18.2% | p=0.7570 -> no distinguible del nulo
+16:05:49 | INFO    |   PC4: 8.3% (acum 87.3%) | nulo p95=16.7% | p=1.0000 -> no distinguible del nulo
+16:05:49 | INFO    |   PC5: 7.6% (acum 95.0%) | nulo p95=15.4% | p=1.0000 -> no distinguible del nulo
+16:05:49 | INFO    |   PC6: 5.0% (acum 100.0%) | nulo p95=14.0% | p=1.0000 -> no distinguible del nulo
+16:05:49 | INFO    |   Control por rangos PC1: correlación de puntuaciones = 0.929
+16:05:49 | INFO    |   Puntuaciones PC1: WT=-6.36, M1=-3.96, M2=-6.39, M3=-4.26, M4=8.61, M5=13.75, M6=-1.39
+16:05:49 | INFO    |   Control por rangos PC2: correlación de puntuaciones = 0.821
+16:05:49 | INFO    |   Puntuaciones PC2: WT=8.82, M1=4.62, M2=1.90, M3=-9.04, M4=5.47, M5=-1.02, M6=-10.76
+16:05:49 | INFO    | MÓDULO 8 | Diagnóstico de artefactos técnicos
+16:05:56 | INFO    |   Concentraciones por encima del tamaño del grupo (FDR < 0.05). Una concentración indica un artefacto solo si el grupo corresponde a una herramienta de extracción distinta; si agrupa una hebra o un nivel con biología propia, es señal, no sesgo.
+16:05:56 | INFO    |   [concentración] BLOQUE=DLT_MIR_3D en PC1: contribución 9.9% frente a 4.2% esperado (razón 2.37, p=0.0002, FDR=0.0002)
+16:05:56 | INFO    |   [concentración] BLOQUE=MIR_DPX_1D en PC1: contribución 6.9% frente a 4.2% esperado (razón 1.64, p=0.022, FDR=0.0268)
+16:05:56 | INFO    |   [concentración] BLOQUE=MIR_DPX_3D en PC1: contribución 25.4% frente a 17.3% esperado (razón 1.47, p=0.0002, FDR=0.0002)
+16:05:56 | INFO    |   [concentración] BLOQUE=CYR_DPX_FLAG en PC2: contribución 3.8% frente a 1.6% esperado (razón 2.39, p=0.014, FDR=0.0166)
+16:05:56 | INFO    |   [concentración] BLOQUE=DPX_3D en PC2: contribución 13.7% frente a 9.4% esperado (razón 1.45, p=0.0322, FDR=0.0402)
+16:05:56 | INFO    |   [concentración] BLOQUE=DPX_FLAG en PC2: contribución 4.5% frente a 1.6% esperado (razón 2.87, p=0.0032, FDR=0.0035)
+16:05:56 | INFO    |   [concentración] BLOQUE=DPX_TD en PC2: contribución 7.7% frente a 3.7% esperado (razón 2.11, p=0.0042, FDR=0.0047)
+16:05:56 | INFO    |   [concentración] BLOQUE=MIR_DPX_FLAG en PC2: contribución 4.5% frente a 1.6% esperado (razón 2.87, p=0.0026, FDR=0.0028)
+16:05:56 | INFO    |   [concentración] BLOQUE=CYR_ISO_3D en PC3: contribución 40.6% frente a 19.9% esperado (razón 2.04, p=0.0002, FDR=0.0002)
+16:05:56 | INFO    |   [concentración] BLOQUE=DLT_CYR_3D en PC3: contribución 8.8% frente a 4.2% esperado (razón 2.1, p=0.0126, FDR=0.0145)
+16:05:56 | INFO    |   [concentración] NIVEL=1D en PC1: contribución 21.8% frente a 15.7% esperado (razón 1.38, p=0.0062, FDR=0.0078)
+16:05:56 | INFO    |   [concentración] NIVEL=FLAG en PC2: contribución 12.9% frente a 5.2% esperado (razón 2.46, p=0.0002, FDR=0.0002)
+16:05:56 | INFO    |   [concentración] NIVEL=TD en PC2: contribución 7.7% frente a 3.7% esperado (razón 2.11, p=0.0042, FDR=0.0048)
+16:05:56 | INFO    |   [concentración] NIVEL=3D en PC3: contribución 84.1% frente a 69.6% esperado (razón 1.21, p=0.0006, FDR=0.0006)
+16:05:56 | INFO    | MÓDULO 10 | Diccionario
+16:05:56 | INFO    | MÓDULO 9 | Figuras
+16:06:07 | INFO    | MÓDULO 11 | Exportación
+16:06:08 | INFO    |   Corte consolidado |rho| >= 0.9: 70 módulos sobre 227 variables agrupadas
+16:06:08 | INFO    | RESUMEN | P=232 (completas=191, con nulos=41) | eliminadas por NZV=0 | alias colapsados=5 | PC1+PC2=62.1% | módulos CONSERVADOR=94 INTERMEDIO=70 PERMISIVO=53

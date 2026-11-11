@@ -1,0 +1,9 @@
+**Nota metodológica. Extracción de descriptores del dúplex como sistema conjunto (OE5)**
+
+La caracterización tridimensional del dúplex Cyrano–miR-7-5p como sistema conjunto se realizó mediante UCSF ChimeraX, utilizando los scripts de Python incluidos en esta carpeta para calcular el radio de giro (RG), las distancias entre extremos (END_DIST) y los pares de bases.
+
+Los descriptores de apilamiento de bases (STACKING), tanto intrahebra como interhebra, se obtuvieron previamente durante el procesamiento de OE4 mediante fr3d-python. Por tanto, estos registros se reutilizaron para integrar las matrices de OE5, sin ejecutar nuevamente FR3D.
+
+En OE5, la identificación de pares de bases se realizó mediante ChimeraX y no mediante FR3D. Los scripts correspondientes se conservan en esta carpeta.
+
+Esta distribución de procedimientos responde a la organización original del procesamiento computacional y permite rastrear las mediciones de OE5 hasta sus herramientas y archivos de origen.

@@ -1,0 +1,39 @@
+﻿ALIAS_GROUP,VAR_NAME,ROLE_IN_GROUP,RELATION
+ALIAS_01,FLAG_CYR_DPX_HAS_P1,representante,
+ALIAS_01,FLAG_MIR_DPX_HAS_P1,alias,coincidencia numérica
+ALIAS_01,FLAG_MIR_DPX_HAS_B,alias,coincidencia numérica
+ALIAS_01,FLAG_DPX_HAS_P1,alias,coincidencia numérica
+ALIAS_01,FLAG_DPX_HAS_B,alias,coincidencia numérica
+ALIAS_01,DPX_3D_BP_CAN_T1,alias,coincidencia numérica
+ALIAS_02,FLAG_CYR_DPX_HAS_O,representante,
+ALIAS_02,FLAG_MIR_DPX_HAS_O,alias,coincidencia numérica
+ALIAS_02,FLAG_DPX_HAS_O,alias,coincidencia numérica
+ALIAS_03,CYR_ISO_1D_PCT_G_P1,representante,
+ALIAS_03,CYR_ISO_1D_PCT_PUR_P1,alias,coincidencia numérica
+ALIAS_04,CYR_ISO_1D_PCT_A_B,representante,
+ALIAS_04,CYR_ISO_1D_PCT_PUR_B,alias,coincidencia numérica
+ALIAS_05,CYR_ISO_1D_PCT_A_P2,representante,
+ALIAS_05,CYR_ISO_1D_PCT_PUR_P2,alias,coincidencia numérica
+ALIAS_06,CYR_DPX_1D_PCT_G_P1,representante,
+ALIAS_06,CYR_DPX_1D_PCT_PUR_P1,alias,coincidencia numérica
+ALIAS_07,CYR_DPX_1D_PCT_A_P2,representante,
+ALIAS_07,CYR_DPX_1D_PCT_PUR_P2,alias,coincidencia numérica
+ALIAS_07,MIR_DPX_1D_PCT_U_P2,alias,complementariedad WC
+ALIAS_08,CYR_DPX_1D_PCT_U_O,representante,
+ALIAS_08,CYR_DPX_1D_PCT_G_O,alias,coincidencia numérica
+ALIAS_09,CYR_DPX_1D_LEN_P1,representante,
+ALIAS_09,MIR_DPX_1D_LEN_P1,alias,complementariedad WC
+ALIAS_09,DPX_3D_BP_CAN_P1,alias,complementariedad WC
+ALIAS_10,CYR_DPX_1D_PCT_U_P1,representante,
+ALIAS_10,MIR_DPX_1D_PCT_A_P1,alias,complementariedad WC
+ALIAS_11,CYR_DPX_1D_LEN_P2,representante,
+ALIAS_11,MIR_DPX_1D_LEN_P2,alias,complementariedad WC
+ALIAS_11,DPX_3D_BP_CAN_P2,alias,complementariedad WC
+ALIAS_12,CYR_DPX_1D_PCT_U_P2,representante,
+ALIAS_12,MIR_DPX_1D_PCT_A_P2,alias,complementariedad WC
+ALIAS_13,MIR_DPX_3D_BP_CAN_GLB,representante,
+ALIAS_13,MIR_DPX_3D_BP_NC_GLB,alias,coincidencia numérica
+ALIAS_13,MIR_DPX_3D_BP_CAN_B,alias,coincidencia numérica
+ALIAS_13,MIR_DPX_3D_BP_NC_B,alias,coincidencia numérica
+ALIAS_14,CYR_DPX_3D_STACK_P1,representante,
+ALIAS_14,MIR_DPX_3D_STACK_P1,alias,complementariedad WC

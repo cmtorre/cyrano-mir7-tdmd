@@ -1,0 +1,44 @@
+INPUTS - OE 2 - ESTRUCTURA SECUNDARIA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+▶ ================================= DOCUMENTACIÓN DE HERRAMIENTA =================================|°|
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RNAfold
+HERRAMIENTA: 	RNAfold WebServer (ViennaRNA Web Suite)
+VERSIÓN:	RNAfold 2.6.3
+LINK: 		http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+▶ ================================= 1. FormatoS de entrada (Input) - FASTA =================================|°|
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+>MRE_Cyrano_WT (26 nt)
+AACAACAAAAUCACCAAUGUCUUCCA
+
+>CYR_M1 (24 nt)
+AACAACAAAAUCACCAAUCUUCCA
+
+>CYR_M2 (24 nt)
+AACAACAAAAUCACCAAUGCUCCA
+
+>CYR_M3 (21 nt)
+AACAACAAAAUCACCAAUGCA
+
+>CYR_M4 (20 nt)
+AACAACAAAAUCAUCUUCCA
+
+>CYR_M5
+AACAACAAAAUCUUCCA
+
+>CYR_M6
+AACAACAAAAUCACCA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+▶ ================================= 2. OUTPUTS =================================|°|
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. formato Dot Brackets (Informativo de la estructura secundaria y formato necesario para RNAComposer y los modelos 3D)
+2. Archivos EPS para procesar y extraer mediciones puntuales de posición relativa, probabilidad de emparejamiento y entropía
+
+
+
+
